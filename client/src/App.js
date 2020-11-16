@@ -1,7 +1,16 @@
 import logo from './logo.svg';
-import './App.css';
-
+import './App.scss';
+import axios from "axios"
+import React, { useEffect } from "react";
+import {URL} from './helper/config'
 function App() {
+  useEffect(() => {
+    console.log("----");
+    axios.get(`${URL}/api/helloworld`).then((result)=>{
+      console.log('result: ', result);
+    })
+   
+  }, [])
   return (
     <div className="App">
       <header className="App-header">
