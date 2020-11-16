@@ -6,6 +6,8 @@ var cors = require('cors')
 app.use(cors())
 
 var { url } = require("./config/connectDB");
+var characters = require('./container/characters/controllers/character_controller');
+
 
 mongoose.connect(url, {
    useNewUrlParser: true,
@@ -15,6 +17,8 @@ mongoose.connect(url, {
    useCreateIndex: true,
  });
 
+
+ app.use('/characters', characters);
 
 app.listen(5000, () => {
    console.log('App listening on port 5000')

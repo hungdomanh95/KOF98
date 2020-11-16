@@ -2,15 +2,13 @@ import logo from './logo.svg';
 import './App.scss';
 import axios from "axios"
 import React, { useEffect } from "react";
-import {URL} from './helper/config'
+import { useDispatch } from "react-redux";
+import { getCharacter } from "./redux/action/characterAction";
 function App() {
-  useEffect(() => {
-    console.log("----");
-    axios.get(`${URL}/api/helloworld`).then((result)=>{
-      console.log('result: ', result);
-    })
-   
-  }, [])
+  const dispatch = useDispatch()
+  useEffect(()=>{
+    dispatch(getCharacter())
+},[])
   return (
     <div className="App">
       <header className="App-header">

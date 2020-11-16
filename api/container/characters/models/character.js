@@ -27,22 +27,44 @@ var CharacterSchema = new mongoose.Schema({
     default: []
   },
   passive1: {
-    type: Array,
-    default: []
+    type: Object,
+    default: {}
   },
   passive2: {
-    type: Array,
-    default: []
+    type: Object,
+    default: {}
   },
   skill: {
+    type: Object,
+    default: {}
+  },
+  ultimate: {
+    type: Object,
+    default: {}
+  },
+  thunderElement: {
     type: Array,
     default: []
   },
-  
- 
+  waterElement: {
+    type: Array,
+    default: []
+  },
+  strongest: {
+    type: Array,
+    default: []
+  },
+  weakness: {
+    type: Array,
+    default: []
+  },
+  recommend: {
+    type: String,
+    default: ''
+  },
 }, {
   versionKey: false
 });
 
-var Character = mongoose.model("Pet", CharacterSchema);
+var Character = mongoose.model("Character", CharacterSchema);
 module.exports = Character;
