@@ -1,20 +1,32 @@
+import logo from './logo.svg';
 import './App.scss';
+import axios from "axios"
 import React, { useEffect } from "react";
-import { useSelector,useDispatch } from "react-redux";
+import { useDispatch,useSelector } from "react-redux";
 import { getCharacter } from "./redux/action/characterAction";
 function App() {
   const dispatch = useDispatch()
-  const {itemsCharacter} = useSelector(state=>state.characterReducer)
+  const { itemsCharacter } = useSelector((state) => state.characterReducer);
   console.log('itemsCharacter: ', itemsCharacter);
   useEffect(()=>{
     dispatch(getCharacter())
-  },[])
-  const changeText =() =>{
-    
-  }
+},[])
   return (
     <div className="App">
-      <input value={itemsCharacter[0].team} onChange={changeText}/>
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
