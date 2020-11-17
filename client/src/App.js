@@ -2,10 +2,12 @@ import logo from './logo.svg';
 import './App.scss';
 import axios from "axios"
 import React, { useEffect } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch,useSelector } from "react-redux";
 import { getCharacter } from "./redux/action/characterAction";
 function App() {
   const dispatch = useDispatch()
+  const { itemsCharacter } = useSelector((state) => state.characterReducer);
+  console.log('itemsCharacter: ', itemsCharacter);
   useEffect(()=>{
     dispatch(getCharacter())
 },[])
