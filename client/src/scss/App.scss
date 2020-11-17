@@ -1,0 +1,18 @@
+.App {
+  .menu{
+    display: grid;
+    grid-template-columns: repeat(3,calc(100%/3));
+    // width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #77cc6d;
+    padding: 15px;
+    a{
+      text-decoration: none;
+      color:white
+    }
+  }
+  .fighter,.home,.admin{
+    margin-top: 15px;
+  }
+}
