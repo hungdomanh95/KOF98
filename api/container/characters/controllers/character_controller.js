@@ -7,4 +7,10 @@ router.get("/getCharacter", async (req, res) => {
   res.json(characters);
 });
 
+router.post("/addCharacter", async (req, res) => {
+  const introCharacter = req.body.introCharacter
+  let characters = await character_services.addCharacter(introCharacter);
+  res.json(characters);
+});
+
 module.exports = router
