@@ -136,6 +136,1372 @@ var docs = [
    ],
    recommend:"Sáng thế Hổ hoặc Rùa, team Samurai."
  },
+ {
+   id:2,
+   name:"Ukyo Tachibana",
+   team:"Samurai Shodown",
+   intro:"Haohmaru trở thành kiếm khách lang thang từ khi còn trẻ, nổi danh cùng thanh kiếm được truyền lại từ mẹ mình. Suốt nhiều năm ròng rã, Haohmaru đã chiến đấu với vô số kẻ mạnh, đánh bại thế lực ma quỷ và tiếp tục lang thang truy cầu cường giả.",
+   infor:[
+     "Đội: Khách mời – Samurai Showdown",
+     "Tư chất: 14 - UR",
+     "Thuộc tính: TANK – Vệ",
+     "Đặc tính: Túy kiếm sư, kiếm khách đơn độc.",
+   ],
+   fate:[
+     "Nắm đấm và đường gươm: Sở hữu Haohmaru, Ukyo Tachibana, Kyo NESTS, Crazy Iori. HP tăng 25%.",
+     "Cường giả phương xa: Sở hữu Haohmaru, Nakoruru, Ukyo Tachibana. HP tăng 25%",
+     "Thân thể cường tráng: Sở hữu Haohmaru, Rugal, Geese, Orochi Yashiro, Daimon. Công tăng 25%.",
+     "Nhất đao đoạt mạng: Thức tỉnh trang bị . Đế Vương Trảm Phá thành MAX. Đế Vương Trảm Phá.",
+     "Huân chương kiếm sĩ: Thức tỉnh huy hiệu Bão Tố (Gale Badge). Máu tăng 15%",
+     "Di Thư kiếm sĩ: Thức tỉnh sách Võ Tự Do (Street Fight Tome). Công tăng 15%",
+   ],
+   passive1:{
+     title:"Cường hóa HP SS",
+     content:[
+       "Tăng cho bản thân 7% HP ở Lv1"
+     ]
+   },
+   passive2:{
+    title:"Túy Kiếm Sư",
+    content:[
+      "Tăng kháng chí mạng và tỷ lệ đỡ đòn của bản thân.",
+      "Nếu phe ta có 3 võ sĩ hồn hổ trở lên, tăng cho toàn đội 10% KST trong 2 lượt. Nếu phe ta có 3 võ sĩ hồn rùa trở lên, tăng cho toàn đội 10% ST trong 2 lượt.",
+      "Tăng 35% kháng chí mạng và 20% tỷ lệ đỡ đòn ở Lv1",
+    ]
+  },
+  skill:{
+    title:"Lốc Kiếm",
+    content:[
+      "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 200 nộ và 30% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+    ]
+  },
+  ultimate:{
+    title:"Đế Vương Trảm Phá",
+    content:[
+      "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 8% máu tối đa của bản thân, bỏ qua đỡ đòn (nội tại Kula, Zero, Omega Rugal vẫn đỡ được), đồng thời giảm 20% tỷ lệ đỡ đòn của mục tiêu.",
+    ]
+  },
+  thunderElement:[
+     "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 250 nộ và 40% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+   ],
+   waterElement:[
+     "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 15% máu tối đa của bản thân, bỏ qua đỡ đòn và chống cự, đồng thời giảm 30% tỷ lệ đỡ đòn của mục tiêu vĩnh viễn.",
+     "Mục tiêu trúng chiêu sẽ bị hiệu ứng 'Chảy máu' (mất 5% máu mỗi lượt, hiệu quả hồi phục giảm 90%) trong 2 lượt.",
+     "Haohmaru tiến vào trạng thái 'Hóa hình' trong 2 lượt: Tăng kích thước, tăng 30% công và 30% hút máu trong 2 lượt.",
+   ],
+   strongest:[
+     "Giảm nộ hàng ngang cực khó chịu.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Hot pick trong PK liên server.",
+   ],
+   weakness:[
+     "So với các võ sĩ Vệ thông dụng thì Haohmaru không trâu bằng.",
+     "Hồn lực bản chất là hổ, tốc độ hồi nộ không thể bằng các võ sĩ Vệ khác.",
+   ],
+   recommend:"Sáng thế Hổ hoặc Rùa, team Samurai."
+ },
+ {
+   id:3,
+   name:"Heavy D",
+   team:"USA",
+   intro:"Haohmaru trở thành kiếm khách lang thang từ khi còn trẻ, nổi danh cùng thanh kiếm được truyền lại từ mẹ mình. Suốt nhiều năm ròng rã, Haohmaru đã chiến đấu với vô số kẻ mạnh, đánh bại thế lực ma quỷ và tiếp tục lang thang truy cầu cường giả.",
+   infor:[
+     "Đội: Khách mời – Samurai Showdown",
+     "Tư chất: 14 - UR",
+     "Thuộc tính: TANK – Vệ",
+     "Đặc tính: Túy kiếm sư, kiếm khách đơn độc.",
+   ],
+   fate:[
+     "Nắm đấm và đường gươm: Sở hữu Haohmaru, Ukyo Tachibana, Kyo NESTS, Crazy Iori. HP tăng 25%.",
+     "Cường giả phương xa: Sở hữu Haohmaru, Nakoruru, Ukyo Tachibana. HP tăng 25%",
+     "Thân thể cường tráng: Sở hữu Haohmaru, Rugal, Geese, Orochi Yashiro, Daimon. Công tăng 25%.",
+     "Nhất đao đoạt mạng: Thức tỉnh trang bị . Đế Vương Trảm Phá thành MAX. Đế Vương Trảm Phá.",
+     "Huân chương kiếm sĩ: Thức tỉnh huy hiệu Bão Tố (Gale Badge). Máu tăng 15%",
+     "Di Thư kiếm sĩ: Thức tỉnh sách Võ Tự Do (Street Fight Tome). Công tăng 15%",
+   ],
+   passive1:{
+     title:"Cường hóa HP SS",
+     content:[
+       "Tăng cho bản thân 7% HP ở Lv1"
+     ]
+   },
+   passive2:{
+    title:"Túy Kiếm Sư",
+    content:[
+      "Tăng kháng chí mạng và tỷ lệ đỡ đòn của bản thân.",
+      "Nếu phe ta có 3 võ sĩ hồn hổ trở lên, tăng cho toàn đội 10% KST trong 2 lượt. Nếu phe ta có 3 võ sĩ hồn rùa trở lên, tăng cho toàn đội 10% ST trong 2 lượt.",
+      "Tăng 35% kháng chí mạng và 20% tỷ lệ đỡ đòn ở Lv1",
+    ]
+  },
+  skill:{
+    title:"Lốc Kiếm",
+    content:[
+      "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 200 nộ và 30% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+    ]
+  },
+  ultimate:{
+    title:"Đế Vương Trảm Phá",
+    content:[
+      "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 8% máu tối đa của bản thân, bỏ qua đỡ đòn (nội tại Kula, Zero, Omega Rugal vẫn đỡ được), đồng thời giảm 20% tỷ lệ đỡ đòn của mục tiêu.",
+    ]
+  },
+  thunderElement:[
+     "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 250 nộ và 40% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+   ],
+   waterElement:[
+     "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 15% máu tối đa của bản thân, bỏ qua đỡ đòn và chống cự, đồng thời giảm 30% tỷ lệ đỡ đòn của mục tiêu vĩnh viễn.",
+     "Mục tiêu trúng chiêu sẽ bị hiệu ứng 'Chảy máu' (mất 5% máu mỗi lượt, hiệu quả hồi phục giảm 90%) trong 2 lượt.",
+     "Haohmaru tiến vào trạng thái 'Hóa hình' trong 2 lượt: Tăng kích thước, tăng 30% công và 30% hút máu trong 2 lượt.",
+   ],
+   strongest:[
+     "Giảm nộ hàng ngang cực khó chịu.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Hot pick trong PK liên server.",
+   ],
+   weakness:[
+     "So với các võ sĩ Vệ thông dụng thì Haohmaru không trâu bằng.",
+     "Hồn lực bản chất là hổ, tốc độ hồi nộ không thể bằng các võ sĩ Vệ khác.",
+   ],
+   recommend:"Sáng thế Hổ hoặc Rùa, team Samurai."
+ },
+ {
+   id:4,
+   name:"Lucky",
+   team:"USA",
+   intro:"Haohmaru trở thành kiếm khách lang thang từ khi còn trẻ, nổi danh cùng thanh kiếm được truyền lại từ mẹ mình. Suốt nhiều năm ròng rã, Haohmaru đã chiến đấu với vô số kẻ mạnh, đánh bại thế lực ma quỷ và tiếp tục lang thang truy cầu cường giả.",
+   infor:[
+     "Đội: Khách mời – Samurai Showdown",
+     "Tư chất: 14 - UR",
+     "Thuộc tính: TANK – Vệ",
+     "Đặc tính: Túy kiếm sư, kiếm khách đơn độc.",
+   ],
+   fate:[
+     "Nắm đấm và đường gươm: Sở hữu Haohmaru, Ukyo Tachibana, Kyo NESTS, Crazy Iori. HP tăng 25%.",
+     "Cường giả phương xa: Sở hữu Haohmaru, Nakoruru, Ukyo Tachibana. HP tăng 25%",
+     "Thân thể cường tráng: Sở hữu Haohmaru, Rugal, Geese, Orochi Yashiro, Daimon. Công tăng 25%.",
+     "Nhất đao đoạt mạng: Thức tỉnh trang bị . Đế Vương Trảm Phá thành MAX. Đế Vương Trảm Phá.",
+     "Huân chương kiếm sĩ: Thức tỉnh huy hiệu Bão Tố (Gale Badge). Máu tăng 15%",
+     "Di Thư kiếm sĩ: Thức tỉnh sách Võ Tự Do (Street Fight Tome). Công tăng 15%",
+   ],
+   passive1:{
+     title:"Cường hóa HP SS",
+     content:[
+       "Tăng cho bản thân 7% HP ở Lv1"
+     ]
+   },
+   passive2:{
+    title:"Túy Kiếm Sư",
+    content:[
+      "Tăng kháng chí mạng và tỷ lệ đỡ đòn của bản thân.",
+      "Nếu phe ta có 3 võ sĩ hồn hổ trở lên, tăng cho toàn đội 10% KST trong 2 lượt. Nếu phe ta có 3 võ sĩ hồn rùa trở lên, tăng cho toàn đội 10% ST trong 2 lượt.",
+      "Tăng 35% kháng chí mạng và 20% tỷ lệ đỡ đòn ở Lv1",
+    ]
+  },
+  skill:{
+    title:"Lốc Kiếm",
+    content:[
+      "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 200 nộ và 30% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+    ]
+  },
+  ultimate:{
+    title:"Đế Vương Trảm Phá",
+    content:[
+      "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 8% máu tối đa của bản thân, bỏ qua đỡ đòn (nội tại Kula, Zero, Omega Rugal vẫn đỡ được), đồng thời giảm 20% tỷ lệ đỡ đòn của mục tiêu.",
+    ]
+  },
+  thunderElement:[
+     "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 250 nộ và 40% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+   ],
+   waterElement:[
+     "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 15% máu tối đa của bản thân, bỏ qua đỡ đòn và chống cự, đồng thời giảm 30% tỷ lệ đỡ đòn của mục tiêu vĩnh viễn.",
+     "Mục tiêu trúng chiêu sẽ bị hiệu ứng 'Chảy máu' (mất 5% máu mỗi lượt, hiệu quả hồi phục giảm 90%) trong 2 lượt.",
+     "Haohmaru tiến vào trạng thái 'Hóa hình' trong 2 lượt: Tăng kích thước, tăng 30% công và 30% hút máu trong 2 lượt.",
+   ],
+   strongest:[
+     "Giảm nộ hàng ngang cực khó chịu.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Hot pick trong PK liên server.",
+   ],
+   weakness:[
+     "So với các võ sĩ Vệ thông dụng thì Haohmaru không trâu bằng.",
+     "Hồn lực bản chất là hổ, tốc độ hồi nộ không thể bằng các võ sĩ Vệ khác.",
+   ],
+   recommend:"Sáng thế Hổ hoặc Rùa, team Samurai."
+ },
+ {
+   id:5,
+   name:"Brian",
+   team:"USA",
+   intro:"Haohmaru trở thành kiếm khách lang thang từ khi còn trẻ, nổi danh cùng thanh kiếm được truyền lại từ mẹ mình. Suốt nhiều năm ròng rã, Haohmaru đã chiến đấu với vô số kẻ mạnh, đánh bại thế lực ma quỷ và tiếp tục lang thang truy cầu cường giả.",
+   infor:[
+     "Đội: Khách mời – Samurai Showdown",
+     "Tư chất: 14 - UR",
+     "Thuộc tính: TANK – Vệ",
+     "Đặc tính: Túy kiếm sư, kiếm khách đơn độc.",
+   ],
+   fate:[
+     "Nắm đấm và đường gươm: Sở hữu Haohmaru, Ukyo Tachibana, Kyo NESTS, Crazy Iori. HP tăng 25%.",
+     "Cường giả phương xa: Sở hữu Haohmaru, Nakoruru, Ukyo Tachibana. HP tăng 25%",
+     "Thân thể cường tráng: Sở hữu Haohmaru, Rugal, Geese, Orochi Yashiro, Daimon. Công tăng 25%.",
+     "Nhất đao đoạt mạng: Thức tỉnh trang bị . Đế Vương Trảm Phá thành MAX. Đế Vương Trảm Phá.",
+     "Huân chương kiếm sĩ: Thức tỉnh huy hiệu Bão Tố (Gale Badge). Máu tăng 15%",
+     "Di Thư kiếm sĩ: Thức tỉnh sách Võ Tự Do (Street Fight Tome). Công tăng 15%",
+   ],
+   passive1:{
+     title:"Cường hóa HP SS",
+     content:[
+       "Tăng cho bản thân 7% HP ở Lv1"
+     ]
+   },
+   passive2:{
+    title:"Túy Kiếm Sư",
+    content:[
+      "Tăng kháng chí mạng và tỷ lệ đỡ đòn của bản thân.",
+      "Nếu phe ta có 3 võ sĩ hồn hổ trở lên, tăng cho toàn đội 10% KST trong 2 lượt. Nếu phe ta có 3 võ sĩ hồn rùa trở lên, tăng cho toàn đội 10% ST trong 2 lượt.",
+      "Tăng 35% kháng chí mạng và 20% tỷ lệ đỡ đòn ở Lv1",
+    ]
+  },
+  skill:{
+    title:"Lốc Kiếm",
+    content:[
+      "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 200 nộ và 30% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+    ]
+  },
+  ultimate:{
+    title:"Đế Vương Trảm Phá",
+    content:[
+      "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 8% máu tối đa của bản thân, bỏ qua đỡ đòn (nội tại Kula, Zero, Omega Rugal vẫn đỡ được), đồng thời giảm 20% tỷ lệ đỡ đòn của mục tiêu.",
+    ]
+  },
+  thunderElement:[
+     "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 250 nộ và 40% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+   ],
+   waterElement:[
+     "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 15% máu tối đa của bản thân, bỏ qua đỡ đòn và chống cự, đồng thời giảm 30% tỷ lệ đỡ đòn của mục tiêu vĩnh viễn.",
+     "Mục tiêu trúng chiêu sẽ bị hiệu ứng 'Chảy máu' (mất 5% máu mỗi lượt, hiệu quả hồi phục giảm 90%) trong 2 lượt.",
+     "Haohmaru tiến vào trạng thái 'Hóa hình' trong 2 lượt: Tăng kích thước, tăng 30% công và 30% hút máu trong 2 lượt.",
+   ],
+   strongest:[
+     "Giảm nộ hàng ngang cực khó chịu.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Hot pick trong PK liên server.",
+   ],
+   weakness:[
+     "So với các võ sĩ Vệ thông dụng thì Haohmaru không trâu bằng.",
+     "Hồn lực bản chất là hổ, tốc độ hồi nộ không thể bằng các võ sĩ Vệ khác.",
+   ],
+   recommend:"Sáng thế Hổ hoặc Rùa, team Samurai."
+ },
+ {
+   id:6,
+   name:"Kyo",
+   team:"Japan - Nhật bản",
+   intro:"Haohmaru trở thành kiếm khách lang thang từ khi còn trẻ, nổi danh cùng thanh kiếm được truyền lại từ mẹ mình. Suốt nhiều năm ròng rã, Haohmaru đã chiến đấu với vô số kẻ mạnh, đánh bại thế lực ma quỷ và tiếp tục lang thang truy cầu cường giả.",
+   infor:[
+     "Đội: Khách mời – Samurai Showdown",
+     "Tư chất: 14 - UR",
+     "Thuộc tính: TANK – Vệ",
+     "Đặc tính: Túy kiếm sư, kiếm khách đơn độc.",
+   ],
+   fate:[
+     "Nắm đấm và đường gươm: Sở hữu Haohmaru, Ukyo Tachibana, Kyo NESTS, Crazy Iori. HP tăng 25%.",
+     "Cường giả phương xa: Sở hữu Haohmaru, Nakoruru, Ukyo Tachibana. HP tăng 25%",
+     "Thân thể cường tráng: Sở hữu Haohmaru, Rugal, Geese, Orochi Yashiro, Daimon. Công tăng 25%.",
+     "Nhất đao đoạt mạng: Thức tỉnh trang bị . Đế Vương Trảm Phá thành MAX. Đế Vương Trảm Phá.",
+     "Huân chương kiếm sĩ: Thức tỉnh huy hiệu Bão Tố (Gale Badge). Máu tăng 15%",
+     "Di Thư kiếm sĩ: Thức tỉnh sách Võ Tự Do (Street Fight Tome). Công tăng 15%",
+   ],
+   passive1:{
+     title:"Cường hóa HP SS",
+     content:[
+       "Tăng cho bản thân 7% HP ở Lv1"
+     ]
+   },
+   passive2:{
+    title:"Túy Kiếm Sư",
+    content:[
+      "Tăng kháng chí mạng và tỷ lệ đỡ đòn của bản thân.",
+      "Nếu phe ta có 3 võ sĩ hồn hổ trở lên, tăng cho toàn đội 10% KST trong 2 lượt. Nếu phe ta có 3 võ sĩ hồn rùa trở lên, tăng cho toàn đội 10% ST trong 2 lượt.",
+      "Tăng 35% kháng chí mạng và 20% tỷ lệ đỡ đòn ở Lv1",
+    ]
+  },
+  skill:{
+    title:"Lốc Kiếm",
+    content:[
+      "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 200 nộ và 30% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+    ]
+  },
+  ultimate:{
+    title:"Đế Vương Trảm Phá",
+    content:[
+      "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 8% máu tối đa của bản thân, bỏ qua đỡ đòn (nội tại Kula, Zero, Omega Rugal vẫn đỡ được), đồng thời giảm 20% tỷ lệ đỡ đòn của mục tiêu.",
+    ]
+  },
+  thunderElement:[
+     "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 250 nộ và 40% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+   ],
+   waterElement:[
+     "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 15% máu tối đa của bản thân, bỏ qua đỡ đòn và chống cự, đồng thời giảm 30% tỷ lệ đỡ đòn của mục tiêu vĩnh viễn.",
+     "Mục tiêu trúng chiêu sẽ bị hiệu ứng 'Chảy máu' (mất 5% máu mỗi lượt, hiệu quả hồi phục giảm 90%) trong 2 lượt.",
+     "Haohmaru tiến vào trạng thái 'Hóa hình' trong 2 lượt: Tăng kích thước, tăng 30% công và 30% hút máu trong 2 lượt.",
+   ],
+   strongest:[
+     "Giảm nộ hàng ngang cực khó chịu.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Hot pick trong PK liên server.",
+   ],
+   weakness:[
+     "So với các võ sĩ Vệ thông dụng thì Haohmaru không trâu bằng.",
+     "Hồn lực bản chất là hổ, tốc độ hồi nộ không thể bằng các võ sĩ Vệ khác.",
+   ],
+   recommend:"Sáng thế Hổ hoặc Rùa, team Samurai."
+ },
+ {
+   id:7,
+   name:"Benimaru",
+   team:"Japan - Nhật bản",
+   intro:"Haohmaru trở thành kiếm khách lang thang từ khi còn trẻ, nổi danh cùng thanh kiếm được truyền lại từ mẹ mình. Suốt nhiều năm ròng rã, Haohmaru đã chiến đấu với vô số kẻ mạnh, đánh bại thế lực ma quỷ và tiếp tục lang thang truy cầu cường giả.",
+   infor:[
+     "Đội: Khách mời – Samurai Showdown",
+     "Tư chất: 14 - UR",
+     "Thuộc tính: TANK – Vệ",
+     "Đặc tính: Túy kiếm sư, kiếm khách đơn độc.",
+   ],
+   fate:[
+     "Nắm đấm và đường gươm: Sở hữu Haohmaru, Ukyo Tachibana, Kyo NESTS, Crazy Iori. HP tăng 25%.",
+     "Cường giả phương xa: Sở hữu Haohmaru, Nakoruru, Ukyo Tachibana. HP tăng 25%",
+     "Thân thể cường tráng: Sở hữu Haohmaru, Rugal, Geese, Orochi Yashiro, Daimon. Công tăng 25%.",
+     "Nhất đao đoạt mạng: Thức tỉnh trang bị . Đế Vương Trảm Phá thành MAX. Đế Vương Trảm Phá.",
+     "Huân chương kiếm sĩ: Thức tỉnh huy hiệu Bão Tố (Gale Badge). Máu tăng 15%",
+     "Di Thư kiếm sĩ: Thức tỉnh sách Võ Tự Do (Street Fight Tome). Công tăng 15%",
+   ],
+   passive1:{
+     title:"Cường hóa HP SS",
+     content:[
+       "Tăng cho bản thân 7% HP ở Lv1"
+     ]
+   },
+   passive2:{
+    title:"Túy Kiếm Sư",
+    content:[
+      "Tăng kháng chí mạng và tỷ lệ đỡ đòn của bản thân.",
+      "Nếu phe ta có 3 võ sĩ hồn hổ trở lên, tăng cho toàn đội 10% KST trong 2 lượt. Nếu phe ta có 3 võ sĩ hồn rùa trở lên, tăng cho toàn đội 10% ST trong 2 lượt.",
+      "Tăng 35% kháng chí mạng và 20% tỷ lệ đỡ đòn ở Lv1",
+    ]
+  },
+  skill:{
+    title:"Lốc Kiếm",
+    content:[
+      "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 200 nộ và 30% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+    ]
+  },
+  ultimate:{
+    title:"Đế Vương Trảm Phá",
+    content:[
+      "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 8% máu tối đa của bản thân, bỏ qua đỡ đòn (nội tại Kula, Zero, Omega Rugal vẫn đỡ được), đồng thời giảm 20% tỷ lệ đỡ đòn của mục tiêu.",
+    ]
+  },
+  thunderElement:[
+     "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 250 nộ và 40% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+   ],
+   waterElement:[
+     "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 15% máu tối đa của bản thân, bỏ qua đỡ đòn và chống cự, đồng thời giảm 30% tỷ lệ đỡ đòn của mục tiêu vĩnh viễn.",
+     "Mục tiêu trúng chiêu sẽ bị hiệu ứng 'Chảy máu' (mất 5% máu mỗi lượt, hiệu quả hồi phục giảm 90%) trong 2 lượt.",
+     "Haohmaru tiến vào trạng thái 'Hóa hình' trong 2 lượt: Tăng kích thước, tăng 30% công và 30% hút máu trong 2 lượt.",
+   ],
+   strongest:[
+     "Giảm nộ hàng ngang cực khó chịu.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Hot pick trong PK liên server.",
+   ],
+   weakness:[
+     "So với các võ sĩ Vệ thông dụng thì Haohmaru không trâu bằng.",
+     "Hồn lực bản chất là hổ, tốc độ hồi nộ không thể bằng các võ sĩ Vệ khác.",
+   ],
+   recommend:"Sáng thế Hổ hoặc Rùa, team Samurai."
+ },
+ {
+   id:8,
+   name:"Daimon",
+   team:"Japan - Nhật bản",
+   intro:"Haohmaru trở thành kiếm khách lang thang từ khi còn trẻ, nổi danh cùng thanh kiếm được truyền lại từ mẹ mình. Suốt nhiều năm ròng rã, Haohmaru đã chiến đấu với vô số kẻ mạnh, đánh bại thế lực ma quỷ và tiếp tục lang thang truy cầu cường giả.",
+   infor:[
+     "Đội: Khách mời – Samurai Showdown",
+     "Tư chất: 14 - UR",
+     "Thuộc tính: TANK – Vệ",
+     "Đặc tính: Túy kiếm sư, kiếm khách đơn độc.",
+   ],
+   fate:[
+     "Nắm đấm và đường gươm: Sở hữu Haohmaru, Ukyo Tachibana, Kyo NESTS, Crazy Iori. HP tăng 25%.",
+     "Cường giả phương xa: Sở hữu Haohmaru, Nakoruru, Ukyo Tachibana. HP tăng 25%",
+     "Thân thể cường tráng: Sở hữu Haohmaru, Rugal, Geese, Orochi Yashiro, Daimon. Công tăng 25%.",
+     "Nhất đao đoạt mạng: Thức tỉnh trang bị . Đế Vương Trảm Phá thành MAX. Đế Vương Trảm Phá.",
+     "Huân chương kiếm sĩ: Thức tỉnh huy hiệu Bão Tố (Gale Badge). Máu tăng 15%",
+     "Di Thư kiếm sĩ: Thức tỉnh sách Võ Tự Do (Street Fight Tome). Công tăng 15%",
+   ],
+   passive1:{
+     title:"Cường hóa HP SS",
+     content:[
+       "Tăng cho bản thân 7% HP ở Lv1"
+     ]
+   },
+   passive2:{
+    title:"Túy Kiếm Sư",
+    content:[
+      "Tăng kháng chí mạng và tỷ lệ đỡ đòn của bản thân.",
+      "Nếu phe ta có 3 võ sĩ hồn hổ trở lên, tăng cho toàn đội 10% KST trong 2 lượt. Nếu phe ta có 3 võ sĩ hồn rùa trở lên, tăng cho toàn đội 10% ST trong 2 lượt.",
+      "Tăng 35% kháng chí mạng và 20% tỷ lệ đỡ đòn ở Lv1",
+    ]
+  },
+  skill:{
+    title:"Lốc Kiếm",
+    content:[
+      "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 200 nộ và 30% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+    ]
+  },
+  ultimate:{
+    title:"Đế Vương Trảm Phá",
+    content:[
+      "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 8% máu tối đa của bản thân, bỏ qua đỡ đòn (nội tại Kula, Zero, Omega Rugal vẫn đỡ được), đồng thời giảm 20% tỷ lệ đỡ đòn của mục tiêu.",
+    ]
+  },
+  thunderElement:[
+     "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 250 nộ và 40% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+   ],
+   waterElement:[
+     "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 15% máu tối đa của bản thân, bỏ qua đỡ đòn và chống cự, đồng thời giảm 30% tỷ lệ đỡ đòn của mục tiêu vĩnh viễn.",
+     "Mục tiêu trúng chiêu sẽ bị hiệu ứng 'Chảy máu' (mất 5% máu mỗi lượt, hiệu quả hồi phục giảm 90%) trong 2 lượt.",
+     "Haohmaru tiến vào trạng thái 'Hóa hình' trong 2 lượt: Tăng kích thước, tăng 30% công và 30% hút máu trong 2 lượt.",
+   ],
+   strongest:[
+     "Giảm nộ hàng ngang cực khó chịu.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Hot pick trong PK liên server.",
+   ],
+   weakness:[
+     "So với các võ sĩ Vệ thông dụng thì Haohmaru không trâu bằng.",
+     "Hồn lực bản chất là hổ, tốc độ hồi nộ không thể bằng các võ sĩ Vệ khác.",
+   ],
+   recommend:"Sáng thế Hổ hoặc Rùa, team Samurai."
+ },
+ {
+   id:9,
+   name:"Kyo NESTS",
+   team:"Japan - Nhật bản",
+   intro:"Haohmaru trở thành kiếm khách lang thang từ khi còn trẻ, nổi danh cùng thanh kiếm được truyền lại từ mẹ mình. Suốt nhiều năm ròng rã, Haohmaru đã chiến đấu với vô số kẻ mạnh, đánh bại thế lực ma quỷ và tiếp tục lang thang truy cầu cường giả.",
+   infor:[
+     "Đội: Khách mời – Samurai Showdown",
+     "Tư chất: 14 - UR",
+     "Thuộc tính: TANK – Vệ",
+     "Đặc tính: Túy kiếm sư, kiếm khách đơn độc.",
+   ],
+   fate:[
+     "Nắm đấm và đường gươm: Sở hữu Haohmaru, Ukyo Tachibana, Kyo NESTS, Crazy Iori. HP tăng 25%.",
+     "Cường giả phương xa: Sở hữu Haohmaru, Nakoruru, Ukyo Tachibana. HP tăng 25%",
+     "Thân thể cường tráng: Sở hữu Haohmaru, Rugal, Geese, Orochi Yashiro, Daimon. Công tăng 25%.",
+     "Nhất đao đoạt mạng: Thức tỉnh trang bị . Đế Vương Trảm Phá thành MAX. Đế Vương Trảm Phá.",
+     "Huân chương kiếm sĩ: Thức tỉnh huy hiệu Bão Tố (Gale Badge). Máu tăng 15%",
+     "Di Thư kiếm sĩ: Thức tỉnh sách Võ Tự Do (Street Fight Tome). Công tăng 15%",
+   ],
+   passive1:{
+     title:"Cường hóa HP SS",
+     content:[
+       "Tăng cho bản thân 7% HP ở Lv1"
+     ]
+   },
+   passive2:{
+    title:"Túy Kiếm Sư",
+    content:[
+      "Tăng kháng chí mạng và tỷ lệ đỡ đòn của bản thân.",
+      "Nếu phe ta có 3 võ sĩ hồn hổ trở lên, tăng cho toàn đội 10% KST trong 2 lượt. Nếu phe ta có 3 võ sĩ hồn rùa trở lên, tăng cho toàn đội 10% ST trong 2 lượt.",
+      "Tăng 35% kháng chí mạng và 20% tỷ lệ đỡ đòn ở Lv1",
+    ]
+  },
+  skill:{
+    title:"Lốc Kiếm",
+    content:[
+      "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 200 nộ và 30% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+    ]
+  },
+  ultimate:{
+    title:"Đế Vương Trảm Phá",
+    content:[
+      "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 8% máu tối đa của bản thân, bỏ qua đỡ đòn (nội tại Kula, Zero, Omega Rugal vẫn đỡ được), đồng thời giảm 20% tỷ lệ đỡ đòn của mục tiêu.",
+    ]
+  },
+  thunderElement:[
+     "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 250 nộ và 40% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+   ],
+   waterElement:[
+     "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 15% máu tối đa của bản thân, bỏ qua đỡ đòn và chống cự, đồng thời giảm 30% tỷ lệ đỡ đòn của mục tiêu vĩnh viễn.",
+     "Mục tiêu trúng chiêu sẽ bị hiệu ứng 'Chảy máu' (mất 5% máu mỗi lượt, hiệu quả hồi phục giảm 90%) trong 2 lượt.",
+     "Haohmaru tiến vào trạng thái 'Hóa hình' trong 2 lượt: Tăng kích thước, tăng 30% công và 30% hút máu trong 2 lượt.",
+   ],
+   strongest:[
+     "Giảm nộ hàng ngang cực khó chịu.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Hot pick trong PK liên server.",
+   ],
+   weakness:[
+     "So với các võ sĩ Vệ thông dụng thì Haohmaru không trâu bằng.",
+     "Hồn lực bản chất là hổ, tốc độ hồi nộ không thể bằng các võ sĩ Vệ khác.",
+   ],
+   recommend:"Sáng thế Hổ hoặc Rùa, team Samurai."
+ },
+ {
+   id:10,
+   name:"Benimaru 2k3",
+   team:"Japan - Nhật bản",
+   intro:"Haohmaru trở thành kiếm khách lang thang từ khi còn trẻ, nổi danh cùng thanh kiếm được truyền lại từ mẹ mình. Suốt nhiều năm ròng rã, Haohmaru đã chiến đấu với vô số kẻ mạnh, đánh bại thế lực ma quỷ và tiếp tục lang thang truy cầu cường giả.",
+   infor:[
+     "Đội: Khách mời – Samurai Showdown",
+     "Tư chất: 14 - UR",
+     "Thuộc tính: TANK – Vệ",
+     "Đặc tính: Túy kiếm sư, kiếm khách đơn độc.",
+   ],
+   fate:[
+     "Nắm đấm và đường gươm: Sở hữu Haohmaru, Ukyo Tachibana, Kyo NESTS, Crazy Iori. HP tăng 25%.",
+     "Cường giả phương xa: Sở hữu Haohmaru, Nakoruru, Ukyo Tachibana. HP tăng 25%",
+     "Thân thể cường tráng: Sở hữu Haohmaru, Rugal, Geese, Orochi Yashiro, Daimon. Công tăng 25%.",
+     "Nhất đao đoạt mạng: Thức tỉnh trang bị . Đế Vương Trảm Phá thành MAX. Đế Vương Trảm Phá.",
+     "Huân chương kiếm sĩ: Thức tỉnh huy hiệu Bão Tố (Gale Badge). Máu tăng 15%",
+     "Di Thư kiếm sĩ: Thức tỉnh sách Võ Tự Do (Street Fight Tome). Công tăng 15%",
+   ],
+   passive1:{
+     title:"Cường hóa HP SS",
+     content:[
+       "Tăng cho bản thân 7% HP ở Lv1"
+     ]
+   },
+   passive2:{
+    title:"Túy Kiếm Sư",
+    content:[
+      "Tăng kháng chí mạng và tỷ lệ đỡ đòn của bản thân.",
+      "Nếu phe ta có 3 võ sĩ hồn hổ trở lên, tăng cho toàn đội 10% KST trong 2 lượt. Nếu phe ta có 3 võ sĩ hồn rùa trở lên, tăng cho toàn đội 10% ST trong 2 lượt.",
+      "Tăng 35% kháng chí mạng và 20% tỷ lệ đỡ đòn ở Lv1",
+    ]
+  },
+  skill:{
+    title:"Lốc Kiếm",
+    content:[
+      "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 200 nộ và 30% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+    ]
+  },
+  ultimate:{
+    title:"Đế Vương Trảm Phá",
+    content:[
+      "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 8% máu tối đa của bản thân, bỏ qua đỡ đòn (nội tại Kula, Zero, Omega Rugal vẫn đỡ được), đồng thời giảm 20% tỷ lệ đỡ đòn của mục tiêu.",
+    ]
+  },
+  thunderElement:[
+     "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 250 nộ và 40% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+   ],
+   waterElement:[
+     "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 15% máu tối đa của bản thân, bỏ qua đỡ đòn và chống cự, đồng thời giảm 30% tỷ lệ đỡ đòn của mục tiêu vĩnh viễn.",
+     "Mục tiêu trúng chiêu sẽ bị hiệu ứng 'Chảy máu' (mất 5% máu mỗi lượt, hiệu quả hồi phục giảm 90%) trong 2 lượt.",
+     "Haohmaru tiến vào trạng thái 'Hóa hình' trong 2 lượt: Tăng kích thước, tăng 30% công và 30% hút máu trong 2 lượt.",
+   ],
+   strongest:[
+     "Giảm nộ hàng ngang cực khó chịu.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Hot pick trong PK liên server.",
+   ],
+   weakness:[
+     "So với các võ sĩ Vệ thông dụng thì Haohmaru không trâu bằng.",
+     "Hồn lực bản chất là hổ, tốc độ hồi nộ không thể bằng các võ sĩ Vệ khác.",
+   ],
+   recommend:"Sáng thế Hổ hoặc Rùa, team Samurai."
+ },
+ {
+   id:11,
+   name:"OMG Daimon",
+   team:"Japan - Nhật bản",
+   intro:"Haohmaru trở thành kiếm khách lang thang từ khi còn trẻ, nổi danh cùng thanh kiếm được truyền lại từ mẹ mình. Suốt nhiều năm ròng rã, Haohmaru đã chiến đấu với vô số kẻ mạnh, đánh bại thế lực ma quỷ và tiếp tục lang thang truy cầu cường giả.",
+   infor:[
+     "Đội: Khách mời – Samurai Showdown",
+     "Tư chất: 14 - UR",
+     "Thuộc tính: TANK – Vệ",
+     "Đặc tính: Túy kiếm sư, kiếm khách đơn độc.",
+   ],
+   fate:[
+     "Nắm đấm và đường gươm: Sở hữu Haohmaru, Ukyo Tachibana, Kyo NESTS, Crazy Iori. HP tăng 25%.",
+     "Cường giả phương xa: Sở hữu Haohmaru, Nakoruru, Ukyo Tachibana. HP tăng 25%",
+     "Thân thể cường tráng: Sở hữu Haohmaru, Rugal, Geese, Orochi Yashiro, Daimon. Công tăng 25%.",
+     "Nhất đao đoạt mạng: Thức tỉnh trang bị . Đế Vương Trảm Phá thành MAX. Đế Vương Trảm Phá.",
+     "Huân chương kiếm sĩ: Thức tỉnh huy hiệu Bão Tố (Gale Badge). Máu tăng 15%",
+     "Di Thư kiếm sĩ: Thức tỉnh sách Võ Tự Do (Street Fight Tome). Công tăng 15%",
+   ],
+   passive1:{
+     title:"Cường hóa HP SS",
+     content:[
+       "Tăng cho bản thân 7% HP ở Lv1"
+     ]
+   },
+   passive2:{
+    title:"Túy Kiếm Sư",
+    content:[
+      "Tăng kháng chí mạng và tỷ lệ đỡ đòn của bản thân.",
+      "Nếu phe ta có 3 võ sĩ hồn hổ trở lên, tăng cho toàn đội 10% KST trong 2 lượt. Nếu phe ta có 3 võ sĩ hồn rùa trở lên, tăng cho toàn đội 10% ST trong 2 lượt.",
+      "Tăng 35% kháng chí mạng và 20% tỷ lệ đỡ đòn ở Lv1",
+    ]
+  },
+  skill:{
+    title:"Lốc Kiếm",
+    content:[
+      "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 200 nộ và 30% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+    ]
+  },
+  ultimate:{
+    title:"Đế Vương Trảm Phá",
+    content:[
+      "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 8% máu tối đa của bản thân, bỏ qua đỡ đòn (nội tại Kula, Zero, Omega Rugal vẫn đỡ được), đồng thời giảm 20% tỷ lệ đỡ đòn của mục tiêu.",
+    ]
+  },
+  thunderElement:[
+     "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 250 nộ và 40% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+   ],
+   waterElement:[
+     "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 15% máu tối đa của bản thân, bỏ qua đỡ đòn và chống cự, đồng thời giảm 30% tỷ lệ đỡ đòn của mục tiêu vĩnh viễn.",
+     "Mục tiêu trúng chiêu sẽ bị hiệu ứng 'Chảy máu' (mất 5% máu mỗi lượt, hiệu quả hồi phục giảm 90%) trong 2 lượt.",
+     "Haohmaru tiến vào trạng thái 'Hóa hình' trong 2 lượt: Tăng kích thước, tăng 30% công và 30% hút máu trong 2 lượt.",
+   ],
+   strongest:[
+     "Giảm nộ hàng ngang cực khó chịu.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Hot pick trong PK liên server.",
+   ],
+   weakness:[
+     "So với các võ sĩ Vệ thông dụng thì Haohmaru không trâu bằng.",
+     "Hồn lực bản chất là hổ, tốc độ hồi nộ không thể bằng các võ sĩ Vệ khác.",
+   ],
+   recommend:"Sáng thế Hổ hoặc Rùa, team Samurai."
+ },
+ {
+   id:12,
+   name:"Athena",
+   team:"Siêu Năng",
+   intro:"Haohmaru trở thành kiếm khách lang thang từ khi còn trẻ, nổi danh cùng thanh kiếm được truyền lại từ mẹ mình. Suốt nhiều năm ròng rã, Haohmaru đã chiến đấu với vô số kẻ mạnh, đánh bại thế lực ma quỷ và tiếp tục lang thang truy cầu cường giả.",
+   infor:[
+     "Đội: Khách mời – Samurai Showdown",
+     "Tư chất: 14 - UR",
+     "Thuộc tính: TANK – Vệ",
+     "Đặc tính: Túy kiếm sư, kiếm khách đơn độc.",
+   ],
+   fate:[
+     "Nắm đấm và đường gươm: Sở hữu Haohmaru, Ukyo Tachibana, Kyo NESTS, Crazy Iori. HP tăng 25%.",
+     "Cường giả phương xa: Sở hữu Haohmaru, Nakoruru, Ukyo Tachibana. HP tăng 25%",
+     "Thân thể cường tráng: Sở hữu Haohmaru, Rugal, Geese, Orochi Yashiro, Daimon. Công tăng 25%.",
+     "Nhất đao đoạt mạng: Thức tỉnh trang bị . Đế Vương Trảm Phá thành MAX. Đế Vương Trảm Phá.",
+     "Huân chương kiếm sĩ: Thức tỉnh huy hiệu Bão Tố (Gale Badge). Máu tăng 15%",
+     "Di Thư kiếm sĩ: Thức tỉnh sách Võ Tự Do (Street Fight Tome). Công tăng 15%",
+   ],
+   passive1:{
+     title:"Cường hóa HP SS",
+     content:[
+       "Tăng cho bản thân 7% HP ở Lv1"
+     ]
+   },
+   passive2:{
+    title:"Túy Kiếm Sư",
+    content:[
+      "Tăng kháng chí mạng và tỷ lệ đỡ đòn của bản thân.",
+      "Nếu phe ta có 3 võ sĩ hồn hổ trở lên, tăng cho toàn đội 10% KST trong 2 lượt. Nếu phe ta có 3 võ sĩ hồn rùa trở lên, tăng cho toàn đội 10% ST trong 2 lượt.",
+      "Tăng 35% kháng chí mạng và 20% tỷ lệ đỡ đòn ở Lv1",
+    ]
+  },
+  skill:{
+    title:"Lốc Kiếm",
+    content:[
+      "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 200 nộ và 30% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+    ]
+  },
+  ultimate:{
+    title:"Đế Vương Trảm Phá",
+    content:[
+      "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 8% máu tối đa của bản thân, bỏ qua đỡ đòn (nội tại Kula, Zero, Omega Rugal vẫn đỡ được), đồng thời giảm 20% tỷ lệ đỡ đòn của mục tiêu.",
+    ]
+  },
+  thunderElement:[
+     "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 250 nộ và 40% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+   ],
+   waterElement:[
+     "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 15% máu tối đa của bản thân, bỏ qua đỡ đòn và chống cự, đồng thời giảm 30% tỷ lệ đỡ đòn của mục tiêu vĩnh viễn.",
+     "Mục tiêu trúng chiêu sẽ bị hiệu ứng 'Chảy máu' (mất 5% máu mỗi lượt, hiệu quả hồi phục giảm 90%) trong 2 lượt.",
+     "Haohmaru tiến vào trạng thái 'Hóa hình' trong 2 lượt: Tăng kích thước, tăng 30% công và 30% hút máu trong 2 lượt.",
+   ],
+   strongest:[
+     "Giảm nộ hàng ngang cực khó chịu.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Hot pick trong PK liên server.",
+   ],
+   weakness:[
+     "So với các võ sĩ Vệ thông dụng thì Haohmaru không trâu bằng.",
+     "Hồn lực bản chất là hổ, tốc độ hồi nộ không thể bằng các võ sĩ Vệ khác.",
+   ],
+   recommend:"Sáng thế Hổ hoặc Rùa, team Samurai."
+ },
+ {
+   id:13,
+   name:"Kensou",
+   team:"Siêu Năng",
+   intro:"Haohmaru trở thành kiếm khách lang thang từ khi còn trẻ, nổi danh cùng thanh kiếm được truyền lại từ mẹ mình. Suốt nhiều năm ròng rã, Haohmaru đã chiến đấu với vô số kẻ mạnh, đánh bại thế lực ma quỷ và tiếp tục lang thang truy cầu cường giả.",
+   infor:[
+     "Đội: Khách mời – Samurai Showdown",
+     "Tư chất: 14 - UR",
+     "Thuộc tính: TANK – Vệ",
+     "Đặc tính: Túy kiếm sư, kiếm khách đơn độc.",
+   ],
+   fate:[
+     "Nắm đấm và đường gươm: Sở hữu Haohmaru, Ukyo Tachibana, Kyo NESTS, Crazy Iori. HP tăng 25%.",
+     "Cường giả phương xa: Sở hữu Haohmaru, Nakoruru, Ukyo Tachibana. HP tăng 25%",
+     "Thân thể cường tráng: Sở hữu Haohmaru, Rugal, Geese, Orochi Yashiro, Daimon. Công tăng 25%.",
+     "Nhất đao đoạt mạng: Thức tỉnh trang bị . Đế Vương Trảm Phá thành MAX. Đế Vương Trảm Phá.",
+     "Huân chương kiếm sĩ: Thức tỉnh huy hiệu Bão Tố (Gale Badge). Máu tăng 15%",
+     "Di Thư kiếm sĩ: Thức tỉnh sách Võ Tự Do (Street Fight Tome). Công tăng 15%",
+   ],
+   passive1:{
+     title:"Cường hóa HP SS",
+     content:[
+       "Tăng cho bản thân 7% HP ở Lv1"
+     ]
+   },
+   passive2:{
+    title:"Túy Kiếm Sư",
+    content:[
+      "Tăng kháng chí mạng và tỷ lệ đỡ đòn của bản thân.",
+      "Nếu phe ta có 3 võ sĩ hồn hổ trở lên, tăng cho toàn đội 10% KST trong 2 lượt. Nếu phe ta có 3 võ sĩ hồn rùa trở lên, tăng cho toàn đội 10% ST trong 2 lượt.",
+      "Tăng 35% kháng chí mạng và 20% tỷ lệ đỡ đòn ở Lv1",
+    ]
+  },
+  skill:{
+    title:"Lốc Kiếm",
+    content:[
+      "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 200 nộ và 30% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+    ]
+  },
+  ultimate:{
+    title:"Đế Vương Trảm Phá",
+    content:[
+      "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 8% máu tối đa của bản thân, bỏ qua đỡ đòn (nội tại Kula, Zero, Omega Rugal vẫn đỡ được), đồng thời giảm 20% tỷ lệ đỡ đòn của mục tiêu.",
+    ]
+  },
+  thunderElement:[
+     "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 250 nộ và 40% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+   ],
+   waterElement:[
+     "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 15% máu tối đa của bản thân, bỏ qua đỡ đòn và chống cự, đồng thời giảm 30% tỷ lệ đỡ đòn của mục tiêu vĩnh viễn.",
+     "Mục tiêu trúng chiêu sẽ bị hiệu ứng 'Chảy máu' (mất 5% máu mỗi lượt, hiệu quả hồi phục giảm 90%) trong 2 lượt.",
+     "Haohmaru tiến vào trạng thái 'Hóa hình' trong 2 lượt: Tăng kích thước, tăng 30% công và 30% hút máu trong 2 lượt.",
+   ],
+   strongest:[
+     "Giảm nộ hàng ngang cực khó chịu.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Hot pick trong PK liên server.",
+   ],
+   weakness:[
+     "So với các võ sĩ Vệ thông dụng thì Haohmaru không trâu bằng.",
+     "Hồn lực bản chất là hổ, tốc độ hồi nộ không thể bằng các võ sĩ Vệ khác.",
+   ],
+   recommend:"Sáng thế Hổ hoặc Rùa, team Samurai."
+ },
+ {
+   id:14,
+   name:"Chin",
+   team:"Siêu Năng",
+   intro:"Haohmaru trở thành kiếm khách lang thang từ khi còn trẻ, nổi danh cùng thanh kiếm được truyền lại từ mẹ mình. Suốt nhiều năm ròng rã, Haohmaru đã chiến đấu với vô số kẻ mạnh, đánh bại thế lực ma quỷ và tiếp tục lang thang truy cầu cường giả.",
+   infor:[
+     "Đội: Khách mời – Samurai Showdown",
+     "Tư chất: 14 - UR",
+     "Thuộc tính: TANK – Vệ",
+     "Đặc tính: Túy kiếm sư, kiếm khách đơn độc.",
+   ],
+   fate:[
+     "Nắm đấm và đường gươm: Sở hữu Haohmaru, Ukyo Tachibana, Kyo NESTS, Crazy Iori. HP tăng 25%.",
+     "Cường giả phương xa: Sở hữu Haohmaru, Nakoruru, Ukyo Tachibana. HP tăng 25%",
+     "Thân thể cường tráng: Sở hữu Haohmaru, Rugal, Geese, Orochi Yashiro, Daimon. Công tăng 25%.",
+     "Nhất đao đoạt mạng: Thức tỉnh trang bị . Đế Vương Trảm Phá thành MAX. Đế Vương Trảm Phá.",
+     "Huân chương kiếm sĩ: Thức tỉnh huy hiệu Bão Tố (Gale Badge). Máu tăng 15%",
+     "Di Thư kiếm sĩ: Thức tỉnh sách Võ Tự Do (Street Fight Tome). Công tăng 15%",
+   ],
+   passive1:{
+     title:"Cường hóa HP SS",
+     content:[
+       "Tăng cho bản thân 7% HP ở Lv1"
+     ]
+   },
+   passive2:{
+    title:"Túy Kiếm Sư",
+    content:[
+      "Tăng kháng chí mạng và tỷ lệ đỡ đòn của bản thân.",
+      "Nếu phe ta có 3 võ sĩ hồn hổ trở lên, tăng cho toàn đội 10% KST trong 2 lượt. Nếu phe ta có 3 võ sĩ hồn rùa trở lên, tăng cho toàn đội 10% ST trong 2 lượt.",
+      "Tăng 35% kháng chí mạng và 20% tỷ lệ đỡ đòn ở Lv1",
+    ]
+  },
+  skill:{
+    title:"Lốc Kiếm",
+    content:[
+      "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 200 nộ và 30% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+    ]
+  },
+  ultimate:{
+    title:"Đế Vương Trảm Phá",
+    content:[
+      "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 8% máu tối đa của bản thân, bỏ qua đỡ đòn (nội tại Kula, Zero, Omega Rugal vẫn đỡ được), đồng thời giảm 20% tỷ lệ đỡ đòn của mục tiêu.",
+    ]
+  },
+  thunderElement:[
+     "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 250 nộ và 40% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+   ],
+   waterElement:[
+     "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 15% máu tối đa của bản thân, bỏ qua đỡ đòn và chống cự, đồng thời giảm 30% tỷ lệ đỡ đòn của mục tiêu vĩnh viễn.",
+     "Mục tiêu trúng chiêu sẽ bị hiệu ứng 'Chảy máu' (mất 5% máu mỗi lượt, hiệu quả hồi phục giảm 90%) trong 2 lượt.",
+     "Haohmaru tiến vào trạng thái 'Hóa hình' trong 2 lượt: Tăng kích thước, tăng 30% công và 30% hút máu trong 2 lượt.",
+   ],
+   strongest:[
+     "Giảm nộ hàng ngang cực khó chịu.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Hot pick trong PK liên server.",
+   ],
+   weakness:[
+     "So với các võ sĩ Vệ thông dụng thì Haohmaru không trâu bằng.",
+     "Hồn lực bản chất là hổ, tốc độ hồi nộ không thể bằng các võ sĩ Vệ khác.",
+   ],
+   recommend:"Sáng thế Hổ hoặc Rùa, team Samurai."
+ },
+ {
+   id:15,
+   name:"Athena 2002",
+   team:"Siêu Năng",
+   intro:"Haohmaru trở thành kiếm khách lang thang từ khi còn trẻ, nổi danh cùng thanh kiếm được truyền lại từ mẹ mình. Suốt nhiều năm ròng rã, Haohmaru đã chiến đấu với vô số kẻ mạnh, đánh bại thế lực ma quỷ và tiếp tục lang thang truy cầu cường giả.",
+   infor:[
+     "Đội: Khách mời – Samurai Showdown",
+     "Tư chất: 14 - UR",
+     "Thuộc tính: TANK – Vệ",
+     "Đặc tính: Túy kiếm sư, kiếm khách đơn độc.",
+   ],
+   fate:[
+     "Nắm đấm và đường gươm: Sở hữu Haohmaru, Ukyo Tachibana, Kyo NESTS, Crazy Iori. HP tăng 25%.",
+     "Cường giả phương xa: Sở hữu Haohmaru, Nakoruru, Ukyo Tachibana. HP tăng 25%",
+     "Thân thể cường tráng: Sở hữu Haohmaru, Rugal, Geese, Orochi Yashiro, Daimon. Công tăng 25%.",
+     "Nhất đao đoạt mạng: Thức tỉnh trang bị . Đế Vương Trảm Phá thành MAX. Đế Vương Trảm Phá.",
+     "Huân chương kiếm sĩ: Thức tỉnh huy hiệu Bão Tố (Gale Badge). Máu tăng 15%",
+     "Di Thư kiếm sĩ: Thức tỉnh sách Võ Tự Do (Street Fight Tome). Công tăng 15%",
+   ],
+   passive1:{
+     title:"Cường hóa HP SS",
+     content:[
+       "Tăng cho bản thân 7% HP ở Lv1"
+     ]
+   },
+   passive2:{
+    title:"Túy Kiếm Sư",
+    content:[
+      "Tăng kháng chí mạng và tỷ lệ đỡ đòn của bản thân.",
+      "Nếu phe ta có 3 võ sĩ hồn hổ trở lên, tăng cho toàn đội 10% KST trong 2 lượt. Nếu phe ta có 3 võ sĩ hồn rùa trở lên, tăng cho toàn đội 10% ST trong 2 lượt.",
+      "Tăng 35% kháng chí mạng và 20% tỷ lệ đỡ đòn ở Lv1",
+    ]
+  },
+  skill:{
+    title:"Lốc Kiếm",
+    content:[
+      "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 200 nộ và 30% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+    ]
+  },
+  ultimate:{
+    title:"Đế Vương Trảm Phá",
+    content:[
+      "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 8% máu tối đa của bản thân, bỏ qua đỡ đòn (nội tại Kula, Zero, Omega Rugal vẫn đỡ được), đồng thời giảm 20% tỷ lệ đỡ đòn của mục tiêu.",
+    ]
+  },
+  thunderElement:[
+     "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 250 nộ và 40% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+   ],
+   waterElement:[
+     "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 15% máu tối đa của bản thân, bỏ qua đỡ đòn và chống cự, đồng thời giảm 30% tỷ lệ đỡ đòn của mục tiêu vĩnh viễn.",
+     "Mục tiêu trúng chiêu sẽ bị hiệu ứng 'Chảy máu' (mất 5% máu mỗi lượt, hiệu quả hồi phục giảm 90%) trong 2 lượt.",
+     "Haohmaru tiến vào trạng thái 'Hóa hình' trong 2 lượt: Tăng kích thước, tăng 30% công và 30% hút máu trong 2 lượt.",
+   ],
+   strongest:[
+     "Giảm nộ hàng ngang cực khó chịu.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Hot pick trong PK liên server.",
+   ],
+   weakness:[
+     "So với các võ sĩ Vệ thông dụng thì Haohmaru không trâu bằng.",
+     "Hồn lực bản chất là hổ, tốc độ hồi nộ không thể bằng các võ sĩ Vệ khác.",
+   ],
+   recommend:"Sáng thế Hổ hoặc Rùa, team Samurai."
+ },
+ {
+   id:16,
+   name:"Kensou XIII",
+   team:"Siêu Năng",
+   intro:"Haohmaru trở thành kiếm khách lang thang từ khi còn trẻ, nổi danh cùng thanh kiếm được truyền lại từ mẹ mình. Suốt nhiều năm ròng rã, Haohmaru đã chiến đấu với vô số kẻ mạnh, đánh bại thế lực ma quỷ và tiếp tục lang thang truy cầu cường giả.",
+   infor:[
+     "Đội: Khách mời – Samurai Showdown",
+     "Tư chất: 14 - UR",
+     "Thuộc tính: TANK – Vệ",
+     "Đặc tính: Túy kiếm sư, kiếm khách đơn độc.",
+   ],
+   fate:[
+     "Nắm đấm và đường gươm: Sở hữu Haohmaru, Ukyo Tachibana, Kyo NESTS, Crazy Iori. HP tăng 25%.",
+     "Cường giả phương xa: Sở hữu Haohmaru, Nakoruru, Ukyo Tachibana. HP tăng 25%",
+     "Thân thể cường tráng: Sở hữu Haohmaru, Rugal, Geese, Orochi Yashiro, Daimon. Công tăng 25%.",
+     "Nhất đao đoạt mạng: Thức tỉnh trang bị . Đế Vương Trảm Phá thành MAX. Đế Vương Trảm Phá.",
+     "Huân chương kiếm sĩ: Thức tỉnh huy hiệu Bão Tố (Gale Badge). Máu tăng 15%",
+     "Di Thư kiếm sĩ: Thức tỉnh sách Võ Tự Do (Street Fight Tome). Công tăng 15%",
+   ],
+   passive1:{
+     title:"Cường hóa HP SS",
+     content:[
+       "Tăng cho bản thân 7% HP ở Lv1"
+     ]
+   },
+   passive2:{
+    title:"Túy Kiếm Sư",
+    content:[
+      "Tăng kháng chí mạng và tỷ lệ đỡ đòn của bản thân.",
+      "Nếu phe ta có 3 võ sĩ hồn hổ trở lên, tăng cho toàn đội 10% KST trong 2 lượt. Nếu phe ta có 3 võ sĩ hồn rùa trở lên, tăng cho toàn đội 10% ST trong 2 lượt.",
+      "Tăng 35% kháng chí mạng và 20% tỷ lệ đỡ đòn ở Lv1",
+    ]
+  },
+  skill:{
+    title:"Lốc Kiếm",
+    content:[
+      "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 200 nộ và 30% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+    ]
+  },
+  ultimate:{
+    title:"Đế Vương Trảm Phá",
+    content:[
+      "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 8% máu tối đa của bản thân, bỏ qua đỡ đòn (nội tại Kula, Zero, Omega Rugal vẫn đỡ được), đồng thời giảm 20% tỷ lệ đỡ đòn của mục tiêu.",
+    ]
+  },
+  thunderElement:[
+     "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 250 nộ và 40% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+   ],
+   waterElement:[
+     "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 15% máu tối đa của bản thân, bỏ qua đỡ đòn và chống cự, đồng thời giảm 30% tỷ lệ đỡ đòn của mục tiêu vĩnh viễn.",
+     "Mục tiêu trúng chiêu sẽ bị hiệu ứng 'Chảy máu' (mất 5% máu mỗi lượt, hiệu quả hồi phục giảm 90%) trong 2 lượt.",
+     "Haohmaru tiến vào trạng thái 'Hóa hình' trong 2 lượt: Tăng kích thước, tăng 30% công và 30% hút máu trong 2 lượt.",
+   ],
+   strongest:[
+     "Giảm nộ hàng ngang cực khó chịu.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Hot pick trong PK liên server.",
+   ],
+   weakness:[
+     "So với các võ sĩ Vệ thông dụng thì Haohmaru không trâu bằng.",
+     "Hồn lực bản chất là hổ, tốc độ hồi nộ không thể bằng các võ sĩ Vệ khác.",
+   ],
+   recommend:"Sáng thế Hổ hoặc Rùa, team Samurai."
+ },
+ {
+   id:17,
+   name:"Chizuru",
+   team:"Nữ Võ SĨ",
+   intro:"Haohmaru trở thành kiếm khách lang thang từ khi còn trẻ, nổi danh cùng thanh kiếm được truyền lại từ mẹ mình. Suốt nhiều năm ròng rã, Haohmaru đã chiến đấu với vô số kẻ mạnh, đánh bại thế lực ma quỷ và tiếp tục lang thang truy cầu cường giả.",
+   infor:[
+     "Đội: Khách mời – Samurai Showdown",
+     "Tư chất: 14 - UR",
+     "Thuộc tính: TANK – Vệ",
+     "Đặc tính: Túy kiếm sư, kiếm khách đơn độc.",
+   ],
+   fate:[
+     "Nắm đấm và đường gươm: Sở hữu Haohmaru, Ukyo Tachibana, Kyo NESTS, Crazy Iori. HP tăng 25%.",
+     "Cường giả phương xa: Sở hữu Haohmaru, Nakoruru, Ukyo Tachibana. HP tăng 25%",
+     "Thân thể cường tráng: Sở hữu Haohmaru, Rugal, Geese, Orochi Yashiro, Daimon. Công tăng 25%.",
+     "Nhất đao đoạt mạng: Thức tỉnh trang bị . Đế Vương Trảm Phá thành MAX. Đế Vương Trảm Phá.",
+     "Huân chương kiếm sĩ: Thức tỉnh huy hiệu Bão Tố (Gale Badge). Máu tăng 15%",
+     "Di Thư kiếm sĩ: Thức tỉnh sách Võ Tự Do (Street Fight Tome). Công tăng 15%",
+   ],
+   passive1:{
+     title:"Cường hóa HP SS",
+     content:[
+       "Tăng cho bản thân 7% HP ở Lv1"
+     ]
+   },
+   passive2:{
+    title:"Túy Kiếm Sư",
+    content:[
+      "Tăng kháng chí mạng và tỷ lệ đỡ đòn của bản thân.",
+      "Nếu phe ta có 3 võ sĩ hồn hổ trở lên, tăng cho toàn đội 10% KST trong 2 lượt. Nếu phe ta có 3 võ sĩ hồn rùa trở lên, tăng cho toàn đội 10% ST trong 2 lượt.",
+      "Tăng 35% kháng chí mạng và 20% tỷ lệ đỡ đòn ở Lv1",
+    ]
+  },
+  skill:{
+    title:"Lốc Kiếm",
+    content:[
+      "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 200 nộ và 30% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+    ]
+  },
+  ultimate:{
+    title:"Đế Vương Trảm Phá",
+    content:[
+      "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 8% máu tối đa của bản thân, bỏ qua đỡ đòn (nội tại Kula, Zero, Omega Rugal vẫn đỡ được), đồng thời giảm 20% tỷ lệ đỡ đòn của mục tiêu.",
+    ]
+  },
+  thunderElement:[
+     "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 250 nộ và 40% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+   ],
+   waterElement:[
+     "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 15% máu tối đa của bản thân, bỏ qua đỡ đòn và chống cự, đồng thời giảm 30% tỷ lệ đỡ đòn của mục tiêu vĩnh viễn.",
+     "Mục tiêu trúng chiêu sẽ bị hiệu ứng 'Chảy máu' (mất 5% máu mỗi lượt, hiệu quả hồi phục giảm 90%) trong 2 lượt.",
+     "Haohmaru tiến vào trạng thái 'Hóa hình' trong 2 lượt: Tăng kích thước, tăng 30% công và 30% hút máu trong 2 lượt.",
+   ],
+   strongest:[
+     "Giảm nộ hàng ngang cực khó chịu.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Hot pick trong PK liên server.",
+   ],
+   weakness:[
+     "So với các võ sĩ Vệ thông dụng thì Haohmaru không trâu bằng.",
+     "Hồn lực bản chất là hổ, tốc độ hồi nộ không thể bằng các võ sĩ Vệ khác.",
+   ],
+   recommend:"Sáng thế Hổ hoặc Rùa, team Samurai."
+ },
+ {
+   id:18,
+   name:"Mai",
+   team:"Nữ Võ SĨ",
+   intro:"Haohmaru trở thành kiếm khách lang thang từ khi còn trẻ, nổi danh cùng thanh kiếm được truyền lại từ mẹ mình. Suốt nhiều năm ròng rã, Haohmaru đã chiến đấu với vô số kẻ mạnh, đánh bại thế lực ma quỷ và tiếp tục lang thang truy cầu cường giả.",
+   infor:[
+     "Đội: Khách mời – Samurai Showdown",
+     "Tư chất: 14 - UR",
+     "Thuộc tính: TANK – Vệ",
+     "Đặc tính: Túy kiếm sư, kiếm khách đơn độc.",
+   ],
+   fate:[
+     "Nắm đấm và đường gươm: Sở hữu Haohmaru, Ukyo Tachibana, Kyo NESTS, Crazy Iori. HP tăng 25%.",
+     "Cường giả phương xa: Sở hữu Haohmaru, Nakoruru, Ukyo Tachibana. HP tăng 25%",
+     "Thân thể cường tráng: Sở hữu Haohmaru, Rugal, Geese, Orochi Yashiro, Daimon. Công tăng 25%.",
+     "Nhất đao đoạt mạng: Thức tỉnh trang bị . Đế Vương Trảm Phá thành MAX. Đế Vương Trảm Phá.",
+     "Huân chương kiếm sĩ: Thức tỉnh huy hiệu Bão Tố (Gale Badge). Máu tăng 15%",
+     "Di Thư kiếm sĩ: Thức tỉnh sách Võ Tự Do (Street Fight Tome). Công tăng 15%",
+   ],
+   passive1:{
+     title:"Cường hóa HP SS",
+     content:[
+       "Tăng cho bản thân 7% HP ở Lv1"
+     ]
+   },
+   passive2:{
+    title:"Túy Kiếm Sư",
+    content:[
+      "Tăng kháng chí mạng và tỷ lệ đỡ đòn của bản thân.",
+      "Nếu phe ta có 3 võ sĩ hồn hổ trở lên, tăng cho toàn đội 10% KST trong 2 lượt. Nếu phe ta có 3 võ sĩ hồn rùa trở lên, tăng cho toàn đội 10% ST trong 2 lượt.",
+      "Tăng 35% kháng chí mạng và 20% tỷ lệ đỡ đòn ở Lv1",
+    ]
+  },
+  skill:{
+    title:"Lốc Kiếm",
+    content:[
+      "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 200 nộ và 30% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+    ]
+  },
+  ultimate:{
+    title:"Đế Vương Trảm Phá",
+    content:[
+      "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 8% máu tối đa của bản thân, bỏ qua đỡ đòn (nội tại Kula, Zero, Omega Rugal vẫn đỡ được), đồng thời giảm 20% tỷ lệ đỡ đòn của mục tiêu.",
+    ]
+  },
+  thunderElement:[
+     "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 250 nộ và 40% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+   ],
+   waterElement:[
+     "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 15% máu tối đa của bản thân, bỏ qua đỡ đòn và chống cự, đồng thời giảm 30% tỷ lệ đỡ đòn của mục tiêu vĩnh viễn.",
+     "Mục tiêu trúng chiêu sẽ bị hiệu ứng 'Chảy máu' (mất 5% máu mỗi lượt, hiệu quả hồi phục giảm 90%) trong 2 lượt.",
+     "Haohmaru tiến vào trạng thái 'Hóa hình' trong 2 lượt: Tăng kích thước, tăng 30% công và 30% hút máu trong 2 lượt.",
+   ],
+   strongest:[
+     "Giảm nộ hàng ngang cực khó chịu.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Hot pick trong PK liên server.",
+   ],
+   weakness:[
+     "So với các võ sĩ Vệ thông dụng thì Haohmaru không trâu bằng.",
+     "Hồn lực bản chất là hổ, tốc độ hồi nộ không thể bằng các võ sĩ Vệ khác.",
+   ],
+   recommend:"Sáng thế Hổ hoặc Rùa, team Samurai."
+ },
+ {
+   id:19,
+   name:"King",
+   team:"Nữ Võ SĨ",
+   intro:"Haohmaru trở thành kiếm khách lang thang từ khi còn trẻ, nổi danh cùng thanh kiếm được truyền lại từ mẹ mình. Suốt nhiều năm ròng rã, Haohmaru đã chiến đấu với vô số kẻ mạnh, đánh bại thế lực ma quỷ và tiếp tục lang thang truy cầu cường giả.",
+   infor:[
+     "Đội: Khách mời – Samurai Showdown",
+     "Tư chất: 14 - UR",
+     "Thuộc tính: TANK – Vệ",
+     "Đặc tính: Túy kiếm sư, kiếm khách đơn độc.",
+   ],
+   fate:[
+     "Nắm đấm và đường gươm: Sở hữu Haohmaru, Ukyo Tachibana, Kyo NESTS, Crazy Iori. HP tăng 25%.",
+     "Cường giả phương xa: Sở hữu Haohmaru, Nakoruru, Ukyo Tachibana. HP tăng 25%",
+     "Thân thể cường tráng: Sở hữu Haohmaru, Rugal, Geese, Orochi Yashiro, Daimon. Công tăng 25%.",
+     "Nhất đao đoạt mạng: Thức tỉnh trang bị . Đế Vương Trảm Phá thành MAX. Đế Vương Trảm Phá.",
+     "Huân chương kiếm sĩ: Thức tỉnh huy hiệu Bão Tố (Gale Badge). Máu tăng 15%",
+     "Di Thư kiếm sĩ: Thức tỉnh sách Võ Tự Do (Street Fight Tome). Công tăng 15%",
+   ],
+   passive1:{
+     title:"Cường hóa HP SS",
+     content:[
+       "Tăng cho bản thân 7% HP ở Lv1"
+     ]
+   },
+   passive2:{
+    title:"Túy Kiếm Sư",
+    content:[
+      "Tăng kháng chí mạng và tỷ lệ đỡ đòn của bản thân.",
+      "Nếu phe ta có 3 võ sĩ hồn hổ trở lên, tăng cho toàn đội 10% KST trong 2 lượt. Nếu phe ta có 3 võ sĩ hồn rùa trở lên, tăng cho toàn đội 10% ST trong 2 lượt.",
+      "Tăng 35% kháng chí mạng và 20% tỷ lệ đỡ đòn ở Lv1",
+    ]
+  },
+  skill:{
+    title:"Lốc Kiếm",
+    content:[
+      "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 200 nộ và 30% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+    ]
+  },
+  ultimate:{
+    title:"Đế Vương Trảm Phá",
+    content:[
+      "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 8% máu tối đa của bản thân, bỏ qua đỡ đòn (nội tại Kula, Zero, Omega Rugal vẫn đỡ được), đồng thời giảm 20% tỷ lệ đỡ đòn của mục tiêu.",
+    ]
+  },
+  thunderElement:[
+     "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 250 nộ và 40% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+   ],
+   waterElement:[
+     "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 15% máu tối đa của bản thân, bỏ qua đỡ đòn và chống cự, đồng thời giảm 30% tỷ lệ đỡ đòn của mục tiêu vĩnh viễn.",
+     "Mục tiêu trúng chiêu sẽ bị hiệu ứng 'Chảy máu' (mất 5% máu mỗi lượt, hiệu quả hồi phục giảm 90%) trong 2 lượt.",
+     "Haohmaru tiến vào trạng thái 'Hóa hình' trong 2 lượt: Tăng kích thước, tăng 30% công và 30% hút máu trong 2 lượt.",
+   ],
+   strongest:[
+     "Giảm nộ hàng ngang cực khó chịu.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Hot pick trong PK liên server.",
+   ],
+   weakness:[
+     "So với các võ sĩ Vệ thông dụng thì Haohmaru không trâu bằng.",
+     "Hồn lực bản chất là hổ, tốc độ hồi nộ không thể bằng các võ sĩ Vệ khác.",
+   ],
+   recommend:"Sáng thế Hổ hoặc Rùa, team Samurai."
+ },
+ {
+   id:20,
+   name:"Maki",
+   team:"Nữ Võ SĨ",
+   intro:"Haohmaru trở thành kiếm khách lang thang từ khi còn trẻ, nổi danh cùng thanh kiếm được truyền lại từ mẹ mình. Suốt nhiều năm ròng rã, Haohmaru đã chiến đấu với vô số kẻ mạnh, đánh bại thế lực ma quỷ và tiếp tục lang thang truy cầu cường giả.",
+   infor:[
+     "Đội: Khách mời – Samurai Showdown",
+     "Tư chất: 14 - UR",
+     "Thuộc tính: TANK – Vệ",
+     "Đặc tính: Túy kiếm sư, kiếm khách đơn độc.",
+   ],
+   fate:[
+     "Nắm đấm và đường gươm: Sở hữu Haohmaru, Ukyo Tachibana, Kyo NESTS, Crazy Iori. HP tăng 25%.",
+     "Cường giả phương xa: Sở hữu Haohmaru, Nakoruru, Ukyo Tachibana. HP tăng 25%",
+     "Thân thể cường tráng: Sở hữu Haohmaru, Rugal, Geese, Orochi Yashiro, Daimon. Công tăng 25%.",
+     "Nhất đao đoạt mạng: Thức tỉnh trang bị . Đế Vương Trảm Phá thành MAX. Đế Vương Trảm Phá.",
+     "Huân chương kiếm sĩ: Thức tỉnh huy hiệu Bão Tố (Gale Badge). Máu tăng 15%",
+     "Di Thư kiếm sĩ: Thức tỉnh sách Võ Tự Do (Street Fight Tome). Công tăng 15%",
+   ],
+   passive1:{
+     title:"Cường hóa HP SS",
+     content:[
+       "Tăng cho bản thân 7% HP ở Lv1"
+     ]
+   },
+   passive2:{
+    title:"Túy Kiếm Sư",
+    content:[
+      "Tăng kháng chí mạng và tỷ lệ đỡ đòn của bản thân.",
+      "Nếu phe ta có 3 võ sĩ hồn hổ trở lên, tăng cho toàn đội 10% KST trong 2 lượt. Nếu phe ta có 3 võ sĩ hồn rùa trở lên, tăng cho toàn đội 10% ST trong 2 lượt.",
+      "Tăng 35% kháng chí mạng và 20% tỷ lệ đỡ đòn ở Lv1",
+    ]
+  },
+  skill:{
+    title:"Lốc Kiếm",
+    content:[
+      "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 200 nộ và 30% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+    ]
+  },
+  ultimate:{
+    title:"Đế Vương Trảm Phá",
+    content:[
+      "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 8% máu tối đa của bản thân, bỏ qua đỡ đòn (nội tại Kula, Zero, Omega Rugal vẫn đỡ được), đồng thời giảm 20% tỷ lệ đỡ đòn của mục tiêu.",
+    ]
+  },
+  thunderElement:[
+     "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 250 nộ và 40% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+   ],
+   waterElement:[
+     "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 15% máu tối đa của bản thân, bỏ qua đỡ đòn và chống cự, đồng thời giảm 30% tỷ lệ đỡ đòn của mục tiêu vĩnh viễn.",
+     "Mục tiêu trúng chiêu sẽ bị hiệu ứng 'Chảy máu' (mất 5% máu mỗi lượt, hiệu quả hồi phục giảm 90%) trong 2 lượt.",
+     "Haohmaru tiến vào trạng thái 'Hóa hình' trong 2 lượt: Tăng kích thước, tăng 30% công và 30% hút máu trong 2 lượt.",
+   ],
+   strongest:[
+     "Giảm nộ hàng ngang cực khó chịu.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Hot pick trong PK liên server.",
+   ],
+   weakness:[
+     "So với các võ sĩ Vệ thông dụng thì Haohmaru không trâu bằng.",
+     "Hồn lực bản chất là hổ, tốc độ hồi nộ không thể bằng các võ sĩ Vệ khác.",
+   ],
+   recommend:"Sáng thế Hổ hoặc Rùa, team Samurai."
+ },
+ {
+   id:21,
+   name:"Alluring Mai",
+   team:"Nữ Võ SĨ",
+   intro:"Haohmaru trở thành kiếm khách lang thang từ khi còn trẻ, nổi danh cùng thanh kiếm được truyền lại từ mẹ mình. Suốt nhiều năm ròng rã, Haohmaru đã chiến đấu với vô số kẻ mạnh, đánh bại thế lực ma quỷ và tiếp tục lang thang truy cầu cường giả.",
+   infor:[
+     "Đội: Khách mời – Samurai Showdown",
+     "Tư chất: 14 - UR",
+     "Thuộc tính: TANK – Vệ",
+     "Đặc tính: Túy kiếm sư, kiếm khách đơn độc.",
+   ],
+   fate:[
+     "Nắm đấm và đường gươm: Sở hữu Haohmaru, Ukyo Tachibana, Kyo NESTS, Crazy Iori. HP tăng 25%.",
+     "Cường giả phương xa: Sở hữu Haohmaru, Nakoruru, Ukyo Tachibana. HP tăng 25%",
+     "Thân thể cường tráng: Sở hữu Haohmaru, Rugal, Geese, Orochi Yashiro, Daimon. Công tăng 25%.",
+     "Nhất đao đoạt mạng: Thức tỉnh trang bị . Đế Vương Trảm Phá thành MAX. Đế Vương Trảm Phá.",
+     "Huân chương kiếm sĩ: Thức tỉnh huy hiệu Bão Tố (Gale Badge). Máu tăng 15%",
+     "Di Thư kiếm sĩ: Thức tỉnh sách Võ Tự Do (Street Fight Tome). Công tăng 15%",
+   ],
+   passive1:{
+     title:"Cường hóa HP SS",
+     content:[
+       "Tăng cho bản thân 7% HP ở Lv1"
+     ]
+   },
+   passive2:{
+    title:"Túy Kiếm Sư",
+    content:[
+      "Tăng kháng chí mạng và tỷ lệ đỡ đòn của bản thân.",
+      "Nếu phe ta có 3 võ sĩ hồn hổ trở lên, tăng cho toàn đội 10% KST trong 2 lượt. Nếu phe ta có 3 võ sĩ hồn rùa trở lên, tăng cho toàn đội 10% ST trong 2 lượt.",
+      "Tăng 35% kháng chí mạng và 20% tỷ lệ đỡ đòn ở Lv1",
+    ]
+  },
+  skill:{
+    title:"Lốc Kiếm",
+    content:[
+      "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 200 nộ và 30% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+    ]
+  },
+  ultimate:{
+    title:"Đế Vương Trảm Phá",
+    content:[
+      "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 8% máu tối đa của bản thân, bỏ qua đỡ đòn (nội tại Kula, Zero, Omega Rugal vẫn đỡ được), đồng thời giảm 20% tỷ lệ đỡ đòn của mục tiêu.",
+    ]
+  },
+  thunderElement:[
+     "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 250 nộ và 40% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+   ],
+   waterElement:[
+     "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 15% máu tối đa của bản thân, bỏ qua đỡ đòn và chống cự, đồng thời giảm 30% tỷ lệ đỡ đòn của mục tiêu vĩnh viễn.",
+     "Mục tiêu trúng chiêu sẽ bị hiệu ứng 'Chảy máu' (mất 5% máu mỗi lượt, hiệu quả hồi phục giảm 90%) trong 2 lượt.",
+     "Haohmaru tiến vào trạng thái 'Hóa hình' trong 2 lượt: Tăng kích thước, tăng 30% công và 30% hút máu trong 2 lượt.",
+   ],
+   strongest:[
+     "Giảm nộ hàng ngang cực khó chịu.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Hot pick trong PK liên server.",
+   ],
+   weakness:[
+     "So với các võ sĩ Vệ thông dụng thì Haohmaru không trâu bằng.",
+     "Hồn lực bản chất là hổ, tốc độ hồi nộ không thể bằng các võ sĩ Vệ khác.",
+   ],
+   recommend:"Sáng thế Hổ hoặc Rùa, team Samurai."
+ },
+ {
+   id:22,
+   name:"King XIII",
+   team:"Nữ Võ SĨ",
+   intro:"Haohmaru trở thành kiếm khách lang thang từ khi còn trẻ, nổi danh cùng thanh kiếm được truyền lại từ mẹ mình. Suốt nhiều năm ròng rã, Haohmaru đã chiến đấu với vô số kẻ mạnh, đánh bại thế lực ma quỷ và tiếp tục lang thang truy cầu cường giả.",
+   infor:[
+     "Đội: Khách mời – Samurai Showdown",
+     "Tư chất: 14 - UR",
+     "Thuộc tính: TANK – Vệ",
+     "Đặc tính: Túy kiếm sư, kiếm khách đơn độc.",
+   ],
+   fate:[
+     "Nắm đấm và đường gươm: Sở hữu Haohmaru, Ukyo Tachibana, Kyo NESTS, Crazy Iori. HP tăng 25%.",
+     "Cường giả phương xa: Sở hữu Haohmaru, Nakoruru, Ukyo Tachibana. HP tăng 25%",
+     "Thân thể cường tráng: Sở hữu Haohmaru, Rugal, Geese, Orochi Yashiro, Daimon. Công tăng 25%.",
+     "Nhất đao đoạt mạng: Thức tỉnh trang bị . Đế Vương Trảm Phá thành MAX. Đế Vương Trảm Phá.",
+     "Huân chương kiếm sĩ: Thức tỉnh huy hiệu Bão Tố (Gale Badge). Máu tăng 15%",
+     "Di Thư kiếm sĩ: Thức tỉnh sách Võ Tự Do (Street Fight Tome). Công tăng 15%",
+   ],
+   passive1:{
+     title:"Cường hóa HP SS",
+     content:[
+       "Tăng cho bản thân 7% HP ở Lv1"
+     ]
+   },
+   passive2:{
+    title:"Túy Kiếm Sư",
+    content:[
+      "Tăng kháng chí mạng và tỷ lệ đỡ đòn của bản thân.",
+      "Nếu phe ta có 3 võ sĩ hồn hổ trở lên, tăng cho toàn đội 10% KST trong 2 lượt. Nếu phe ta có 3 võ sĩ hồn rùa trở lên, tăng cho toàn đội 10% ST trong 2 lượt.",
+      "Tăng 35% kháng chí mạng và 20% tỷ lệ đỡ đòn ở Lv1",
+    ]
+  },
+  skill:{
+    title:"Lốc Kiếm",
+    content:[
+      "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 200 nộ và 30% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+    ]
+  },
+  ultimate:{
+    title:"Đế Vương Trảm Phá",
+    content:[
+      "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 8% máu tối đa của bản thân, bỏ qua đỡ đòn (nội tại Kula, Zero, Omega Rugal vẫn đỡ được), đồng thời giảm 20% tỷ lệ đỡ đòn của mục tiêu.",
+    ]
+  },
+  thunderElement:[
+     "Haohmaru dùng lốc kiếm tấn công một hàng ngang địch, giảm 250 nộ và 40% tỷ lệ chí mạng của mục tiêu trong 1 lượt.",
+   ],
+   waterElement:[
+     "Haohmaru tấn công một mục tiêu địch, gây thêm sát thương bằng 15% máu tối đa của bản thân, bỏ qua đỡ đòn và chống cự, đồng thời giảm 30% tỷ lệ đỡ đòn của mục tiêu vĩnh viễn.",
+     "Mục tiêu trúng chiêu sẽ bị hiệu ứng 'Chảy máu' (mất 5% máu mỗi lượt, hiệu quả hồi phục giảm 90%) trong 2 lượt.",
+     "Haohmaru tiến vào trạng thái 'Hóa hình' trong 2 lượt: Tăng kích thước, tăng 30% công và 30% hút máu trong 2 lượt.",
+   ],
+   strongest:[
+     "Giảm nộ hàng ngang cực khó chịu.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Bổ trợ tốt cho 2 đội hình hổ và rùa khi bổ sung điểm yếu thiếu phòng ngự của hổ và thâm hụt sát thương của rùa.",
+     "Hot pick trong PK liên server.",
+   ],
+   weakness:[
+     "So với các võ sĩ Vệ thông dụng thì Haohmaru không trâu bằng.",
+     "Hồn lực bản chất là hổ, tốc độ hồi nộ không thể bằng các võ sĩ Vệ khác.",
+   ],
+   recommend:"Sáng thế Hổ hoặc Rùa, team Samurai."
+ },
+
 ];
 
 Character.find({}, function (err, data) {

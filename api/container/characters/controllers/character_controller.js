@@ -8,8 +8,19 @@ router.get("/getCharacter", async (req, res) => {
 });
 
 router.post("/addCharacter", async (req, res) => {
-  const introCharacter = req.body.introCharacter
-  let characters = await character_services.addCharacter(introCharacter);
+  const data = req.body.data
+  let characters = await character_services.addCharacter(data);
+  res.json(characters);
+});
+router.post("/deleteCharacter", async (req, res) => {
+  const idCharacter = req.body.idCharacter
+  let characters = await character_services.deleteCharacter(idCharacter);
+  res.json(characters);
+});
+router.post("/updateCharacter", async (req, res) => {
+  const idCharacter = req.body.idCharacter
+  const data = req.body.data
+  let characters = await character_services.updateCharacter(idCharacter,data);
   res.json(characters);
 });
 
