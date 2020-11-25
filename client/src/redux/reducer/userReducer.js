@@ -1,10 +1,4 @@
-import {
-  REGISTER,
-  LOGIN,
-  STATUS_REGISTER,
-  STATUS_LOGIN,
-  DELETE,
-} from "../action/actionType";
+import {REGISTER, LOGIN, STATUS_REGISTER, STATUS_LOGIN, DELETE} from "../action/actionType";
 const statusRegister = false;
 const statusLogin = true;
 const userReducer = (state = { statusRegister, statusLogin }, action) => {

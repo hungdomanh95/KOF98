@@ -1,6 +1,4 @@
-import React, { useEffect,useState } from "react";
-import { useDispatch,useSelector } from "react-redux";
-import { getCharacter,addCharacter} from "../../redux/action/characterAction";
+import React from "react";
 const Fighter = () => {
   
     return (

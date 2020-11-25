@@ -1,14 +1,13 @@
 import "./scss/App.scss";
-import { Route, Switch, BrowserRouter, Link } from "react-router-dom";
+import { Route, Switch, BrowserRouter } from "react-router-dom";
 import React, { Fragment } from "react";
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 import Admin from "./components/Admin/Admin";
 import Fighter from "./components/Fighter/Fighter";
 import Home from "./components/Home/Home";
 import Auth from "./components/Auth/Auth";
 import AuthAdmin from "./components/Auth/AuthAdmin";
 function App() {
-  const { notiLogin } = useSelector((state) => state.userReducer);
   return (
     <div className="App">
       <BrowserRouter>

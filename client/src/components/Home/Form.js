@@ -6,10 +6,21 @@ const Form = () => {
   const dispatch = useDispatch();
 
   const { statusLogin } = useSelector((state) => state.userReducer);
-  const { statusRegister } = useSelector((state) => state.userReducer);
 
+  const user = {
+    name: "hung7",
+    password: "hung"
+  };
+  SignUpUserSchema.validate(user)
+  .then(function(value) {
+    console.log(value); 
+  })
+  .catch(function(err) {
+    console.log(err);
+  });
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
+  const [notiSign, setNotiSign] = useState("");
   const inputUserName = (e) => {
     setUserName(e.target.value);
   };
@@ -34,6 +45,7 @@ const Form = () => {
         <h2>KOF'98</h2>
       </div>
       <div className="body-form">
+        {}
         <div className="input username">
           <i class="fa fa-user"></i>
           <input placeholder="Name" onChange={(e) => inputUserName(e)} />
