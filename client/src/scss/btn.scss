@@ -1,0 +1,13 @@
+.btn {
+  cursor: pointer;
+  @include colorMain;
+  color: white;
+  border-radius: 5px;
+  width: 50%;
+  height: 50px;
+  @include flexCenter;
+  margin: 20px auto;
+  &.btn-register{
+      background-color: #e74c3c;
+  }
+}

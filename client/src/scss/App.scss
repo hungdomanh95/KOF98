@@ -12,7 +12,11 @@
       color:white
     }
   }
-  .fighter,.home,.admin{
-    margin-top: 15px;
-  }
+ 
 }
+
+@import "./mixin.scss";
+@import "./btn.scss";
+@import "./admin.scss";
+@import "./fighter.scss";
+@import "./home.scss";
