@@ -1,25 +1,26 @@
-import { GET_DATA,ADD_DATA } from "./actionType";
-import {getCharacterService,addCharacterService} from '../services/characterServices'
+import { GET_DATA, ADD_DATA, GET_DATA_LIST } from "./actionType";
+import { getCharacterService } from "../services/characterServices";
 
-export const getCharacter =  () => {
-    return  dispatch => {
-        getCharacterService().then(result=>{
-           return dispatch({
-               type: GET_DATA,
-               data:result.data
-             })
-       })
-
-   }
+export const getCharacter = () => {
+  return (dispatch) => {
+    // GỌI API
+    getCharacterService().then((result) => {
+      return dispatch({
+        type: GET_DATA,
+        data: result.data,
+      });
+    });
+  };
 };
-export const addCharacter =  (introCharacter) => {
-    return dispatch => {
-        addCharacterService(introCharacter).then(result=>{
-           return dispatch({
-               type: ADD_DATA,
-               data:result.data
-             })
-       })
 
-   }
+export const GetListCharacter = (listcharacter) => {
+  return (dispatch) => {
+    // GỌI API
+    getCharacterService().then((result) => {
+      return dispatch({
+        type: GET_DATA_LIST,
+        data: result.data,
+      });
+    });
+  };
 };

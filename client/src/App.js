@@ -7,6 +7,7 @@ import Fighter from "./components/Fighter/Fighter";
 import Home from "./components/Home/Home";
 import Auth from "./components/Auth/Auth";
 import AuthAdmin from "./components/Auth/AuthAdmin";
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div className="App">
