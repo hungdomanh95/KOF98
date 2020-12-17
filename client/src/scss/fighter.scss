@@ -1,0 +1,58 @@
+.banner {
+    position: relative;
+    .banner__bgImage {
+        width: 100%;
+    }
+    .banner__item {
+        width: 30%;
+        position: absolute;
+        top: 31%;
+        left: 10%;
+    }
+    .banner__link {
+        width: 60%;
+        left: 50%;
+        bottom: 10%;
+        transform: translateX(-50%);
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        img {
+            width: 100%;
+        }
+    }
+}
+.showFighter {
+    background: url("/images/Background (Vo si).png") ;
+    padding-top: 150px;
+    background-size: cover;
+    .show__bgImages {
+        width: 100%;
+    }
+    .show__List {
+        width: 90%;
+        margin:0 auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        h3 {
+            color: rgb(232, 229, 48);
+        }
+        .list__content {
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            grid-gap:10px;
+            .list__detail {
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+                img {
+                    width: 80px;
+                }
+                p {
+                    color: white;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
