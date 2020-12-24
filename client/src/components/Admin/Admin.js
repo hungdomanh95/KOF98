@@ -6,6 +6,7 @@ import { connect } from "react-redux";
 import { characterReducer } from "../../redux/reducer/characterReducer";
 import { IMGCharacter } from "../ListData";
 import { Fragment } from "react";
+import Modal from "./Modal";
 
 class Admin extends Component {
   state = {
@@ -67,56 +68,7 @@ class Admin extends Component {
     return (
       <div className="admin">
         {
-          (this.state.selectCharacter = !undefined && this.state.statusModal && (
-            <div className="Modal">
-              <div className="showModal">
-                <div className="showModalName">
-                  {!this.state.statusInput ? 
-                  <p>Name Character: {this.state.selectCharacter.name}</p> : 
-                  <input name = "name" value = {this.state.selectCharacter.name} /> }
-  
-                </div>
-                {/* <div className="showModalTeam">
-                  Team: {this.state.selectCharacter.team}
-                </div>
-                <div className="showModalIntro">
-                  Information: {this.state.selectCharacter.intro}
-                </div>
-                <div className="showModalFate">
-                  Fate: {this.state.selectCharacter.fate}
-                </div>
-                <div className="showModalThunder">
-                  <div className="thunderItem">
-                    Thunder Element: {this.state.selectCharacter.thunderElement}
-                  </div>
-                  <div className="thunderItem">
-                    Water Element: {this.state.selectCharacter.waterElement}
-                  </div>
-                  <div className="showSkill">
-                    <div className="PassiveSKill">
-                      Frist Passive: {this.state.selectCharacter.passive1.title}
-                    </div>
-                    <div className="PassiveSKill">
-                      Second Passive:{" "}
-                      {this.state.selectCharacter.passive1.content}
-                    </div>
-                    <div className="skillItem">
-                      First Skill: {this.state.selectCharacter.passive2.title}
-                    </div>
-                    <div className="skillItem">
-                      Second Skill:{" "}
-                      {this.state.selectCharacter.passive2.content}
-                    </div>
-                  </div>
-                </div> */}
-                <div className="buttonEdit">
-                  <div className="btn btn-danger" onClick={this.hideModal}>CLOSE</div>
-                  <div className="btn btn-warning" onClick={this.handleShowInput}>EDIT</div>
-                  <div className="btn btn-warning">UPDATE</div>
-                </div>
-              </div>
-            </div>
-          ))
+          (this.state.selectCharacter = !undefined && this.state.statusModal && <Modal selectCharacter={this.state.selectCharacter} /> )
         }
         {/* {this.state.statusModal && <h1>HELLO WORLD</h1> } */}
 
