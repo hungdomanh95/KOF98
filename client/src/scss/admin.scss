@@ -1,0 +1,50 @@
+.admin {
+  .admin-title {
+    text-align: center;
+    padding: 10px;
+  }
+  .Modal {
+    position: fixed;
+    width:100%;
+    .showModal {
+      background: rgba(0, 0, 0, 0.6);
+      width: 80%;
+      height: 100vh;
+      justify-items: center;
+      margin: 0 auto;
+      color: white;
+      .buttonEdit {
+        width: 30%;
+        display: flex;
+        margin: 0 auto;
+      }
+    }
+    // .closed {
+    //   width: 30%;
+    // }
+    // .updated {
+    //   width: 30%;
+    // }
+  }
+  .Listcharacter {
+    width: 95%;
+    thead {
+      text-align: center;
+    }
+    tbody {
+      tr {
+        td {
+          text-align: center;
+          // padding: 0 20px 0 0;
+          font-size: 1.25rem;
+          .imgCharacter {
+            width: 25%;
+          }
+          // button {
+          //   // margin-right:;
+          // }
+        }
+      }
+    }
+  }
+}
