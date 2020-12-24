@@ -6,6 +6,7 @@ import { GET_DATA, GET_DATA_LIST} from "../action/actionType";
       case GET_DATA: 
       return {
         ...state,
+        characterItems:action.data
       }
       case GET_DATA_LIST: 
       // var  updatedState = [...action.listcharacter];

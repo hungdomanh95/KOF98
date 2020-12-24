@@ -12,7 +12,6 @@ export const getCharacter = () => {
     });
   };
 };
-
 export const GetListCharacter = (listcharacter) => {
   return (dispatch) => {
     // GỌI API
