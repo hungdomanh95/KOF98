@@ -24,29 +24,29 @@
 }
 .showFighter {
     background: url("/images/Background (Vo si).png") ;
-    padding-top: 150px;
+    padding-top: 200px;
     background-size: cover;
     .show__bgImages {
         width: 100%;
     }
     .show__List {
-        width: 90%;
+        max-width: 1200px;
         margin:0 auto;
         display: grid;
-        grid-template-columns: 50% 50%;
-        h3 {
+        grid-template-columns: repeat(3,1fr);
+        h5 {
             color: rgb(232, 229, 48);
         }
         .list__content {
             display: grid;
-            grid-template-columns: repeat(6,1fr);
+            grid-template-columns: repeat(3,1fr);
             grid-gap:10px;
             .list__detail {
                 text-align: center;
                 cursor: pointer;
                 width: 100%;
                 img {
-                    width: 80px;
+                    width: 100px;
                 }
                 p {
                     color: white;

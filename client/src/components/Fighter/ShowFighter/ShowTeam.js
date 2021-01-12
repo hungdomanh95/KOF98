@@ -7,11 +7,11 @@ export default class ShowTeam extends Component {
         })
         return (
             <div>
-                <h3>{this.props.team}</h3>
+                <h5>{this.props.team}</h5>
                     <div className="list__content">
                         {newList && newList.map((item, index) => {
                             return (
-                                <div className="list__detail">
+                                <div className="list__detail" onClick={()=>{this.props.handleCharacter(item)}}>
                                     <img src={item.images} alt="" />
                                     <p>{item.name}</p>
                                 </div>

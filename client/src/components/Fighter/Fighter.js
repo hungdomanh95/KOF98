@@ -4,9 +4,12 @@ import {getCharacter} from "./../../redux/action/characterAction";
 import {listImage,listTeam} from "./Listdata";
 import Banner from "./Banner/Banner";
 import ShowFighter from "./ShowFighter/ShowFighter"
+import ModalFighter from './ModalFighter/ModalFighter';
  class Fighter extends Component {
      state={
-        listCharacter:[]
+        listCharacter:[],
+        isRenderModal:false,
+        characterInfor:{}
      }
 
     componentDidMount=()=>{
@@ -26,11 +29,29 @@ import ShowFighter from "./ShowFighter/ShowFighter"
         })
     }
     }
+    handleCharacter=(character)=>{
+        this.setState({
+            characterInfor:character,
+            isRenderModal:true
+        })
+    }
+    onCloseModal=()=>{
+        this.setState({
+            isRenderModal:false
+        })
+    }
     render() {
         return (
             <>
                 <Banner />
-                <ShowFighter team={listTeam} listCharacter={this.state.listCharacter}/>
+                <ShowFighter 
+                    team={listTeam} 
+                    listCharacter={this.state.listCharacter} 
+                    handleCharacter={this.handleCharacter}/>
+                <ModalFighter
+                    characterInfor={this.state.characterInfor}
+                    isRenderModal={this.state.isRenderModal}
+                    onCloseModal={this.onCloseModal}/>
             </>
         )
     }
