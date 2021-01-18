@@ -62,28 +62,72 @@
                 margin-top: 80px;
                 .infor__Detail {
                     img {
-                        margin:10px 0 10px 10px;
-                        width: 15%;
+                        margin: 10px 0px ;
+                        width: 50px;
                         border-radius: 50%;
                         margin-right: 15px;
                     }
-                    &:last-child{
-                        img{
-                            width: 20%;
-                        }
+                    &:last-child {
+                        img {
+                            width:100px;
                     }
                 }
             }
         }
+    }
         .modal__Body {
             .descrip__Character {
                 display: grid;
-                grid-template-columns: repeat(2,1fr);
+                grid-template-columns: repeat(2, 1fr);
                 border-bottom: 5px solid black;
-                grid-gap:10px;
+                grid-gap: 10px;
                 padding: 20px;
                 &:last-child {
                     border: none;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 900px) {
+    .modal__Fighter {
+        .modal__Content {
+            padding:20px;
+            width:100%;
+            .modal__Header {
+                display: grid;
+                grid-template-columns:auto;
+                img{
+                    width:50%;
+                    transform: translateX(50%);
+                }
+            }
+            .modal__Body{
+                .descrip__Character{
+                    display: grid;
+                    grid-template-columns:auto;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .modal__Fighter {
+        .modal__Content {
+            padding:20px;
+            width:100%;
+            .modal__Header {
+                display: grid;
+                grid-template-columns:auto;
+                img{
+                    width:70%;
+                    transform:translateX(25%);
+                }
+            }
+            .modal__Body{
+                .descrip__Character{
+                    display: grid;
+                    grid-template-columns:auto;
                 }
             }
         }

@@ -1,7 +1,7 @@
 .banner {
     position: relative;
     .banner__bgImage {
-        width: 100%;
+        width:100%;
     }
     .banner__item {
         width: 30%;
@@ -25,7 +25,7 @@
 .showFighter {
     background: url("/images/Background (Vo si).png") ;
     padding-top: 200px;
-    background-size: cover;
+    background-size: contain no-repeat;
     .show__bgImages {
         width: 100%;
     }
@@ -53,6 +53,30 @@
                     text-align: center;
                 }
             }
+        }
+    }
+}
+@media screen and (max-width:900px){
+    .banner{
+        .banner__item{
+            display:none;
+        }
+        .banner__link{
+            width: 100%;
+        }
+    }
+    .showFighter{
+        background-size:contain no-repeat;
+        .show__List{
+            grid-template-columns: repeat(2,1fr);
+            padding:0 20px;
+        }
+    }
+}
+@media screen and (max-width:500px){
+    .showFighter{
+        .show__List{
+            grid-template-columns:auto;
         }
     }
 }
