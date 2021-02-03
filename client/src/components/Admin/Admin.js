@@ -6,9 +6,13 @@ import { connect } from "react-redux";
 import { characterReducer } from "../../redux/reducer/characterReducer";
 import { IMGCharacter } from "../ListData";
 import { Fragment } from "react";
+<<<<<<< HEAD
 import Modal from "./Modal"
 import FormAddCharacter from "./FormAddCharacter";
 import { ModalFormAddCharacter } from "../Modal/ModalFormAddCharacter";
+=======
+import Modal from "./Modal";
+>>>>>>> e157f1fc0844f31bdbd930967bc147b7d89d6faf
 
 class Admin extends Component {
   state = {
@@ -72,7 +76,15 @@ class Admin extends Component {
 
     return (
       <div className="admin">
+<<<<<<< HEAD
         {(this.state.selectCharacter =! undefined && this.props.statusModal && <Modal itemCharacter = {this.state.selectCharacter}/>)}
+=======
+        {
+          (this.state.selectCharacter = !undefined && this.state.statusModal && <Modal selectCharacter={this.state.selectCharacter} /> )
+        }
+        {/* {this.state.statusModal && <h1>HELLO WORLD</h1> } */}
+
+>>>>>>> e157f1fc0844f31bdbd930967bc147b7d89d6faf
         <h1 className="admin-title">QUẢN LÝ VÕ SĨ</h1>
         <table className="Listcharacter">
           {/* this.props.Listcharter grant điều kiện để đc chạy tiếp  */}
