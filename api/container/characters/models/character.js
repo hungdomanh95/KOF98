@@ -4,7 +4,7 @@ var CharacterSchema = new mongoose.Schema({
   id: {
     type: Number,
     unique: true,
-    required: true
+    required: false
   },
   name: {
     type: String,

@@ -4,7 +4,6 @@ const AuthAdmin = ({path, component: Component}) => {
     return (
         <Route path={path} render={(routeProps)=>{
             const user = JSON.parse(localStorage.getItem('user'));
-            console.log('user: ', user);
             if(user){
                 if(user.role === 'admin'){
                    return <Component {...routeProps} />

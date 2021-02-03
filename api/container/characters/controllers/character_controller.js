@@ -8,6 +8,7 @@ router.get("/getCharacter", async (req, res) => {
 });
 
 router.post("/addCharacter", async (req, res) => {
+  console.log('req.body: ', req.body);
   const data = req.body.data
   let characters = await character_services.addCharacter(data);
   res.json(characters);

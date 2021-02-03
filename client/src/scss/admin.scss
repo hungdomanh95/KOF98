@@ -5,10 +5,10 @@
   }
   .Modal {
     position: fixed;
-    width:100%;
+    width: 100%;
     .showModal {
-      background: rgba(0, 0, 0, 0.6);
-      width: 80%;
+      background: rgba(0, 0, 0, 0.8);
+      width: 100%;
       height: 100vh;
       justify-items: center;
       margin: 0 auto;
@@ -19,12 +19,6 @@
         margin: 0 auto;
       }
     }
-    // .closed {
-    //   width: 30%;
-    // }
-    // .updated {
-    //   width: 30%;
-    // }
   }
   .Listcharacter {
     width: 95%;
@@ -35,16 +29,35 @@
       tr {
         td {
           text-align: center;
-          // padding: 0 20px 0 0;
           font-size: 1.25rem;
           .imgCharacter {
             width: 25%;
           }
-          // button {
-          //   // margin-right:;
-          // }
         }
       }
     }
   }
 }
+
+// CSS CỦA FORMCHARACTER
+
+.formCharacter {
+  .buttonEdit {
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+  }
+}
+
+// .formCharacter {
+//   // position: fixed;
+//   .form-group {
+//     background:rgba(0,0,0,0.8);
+//     width: 100%;
+//       height: 100vh;
+//       justify-items: center;
+//       margin: 0 auto;
+//       color: white
+
+//   }
+// }

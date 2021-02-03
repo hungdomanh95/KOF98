@@ -1,7 +1,8 @@
-import {REGISTER, LOGIN, STATUS_REGISTER, STATUS_LOGIN, DELETE} from "../action/actionType";
+import {REGISTER, LOGIN, STATUS_REGISTER, STATUS_LOGIN, DELETE,ONOFF_MODAL} from "../action/actionType";
 const statusRegister = false;
 const statusLogin = true;
-const userReducer = (state = { statusRegister, statusLogin }, action) => {
+const statusModal = false;
+const userReducer = (state = { statusRegister, statusLogin,statusModal }, action) => {
   switch (action.type) {
     case REGISTER:
       return {
@@ -33,7 +34,6 @@ const userReducer = (state = { statusRegister, statusLogin }, action) => {
       return {
         ...state,
       };
-
     default:
       return state;
   }

@@ -1,4 +1,4 @@
-import { REGISTER, LOGIN,STATUS_REGISTER,STATUS_LOGIN,DELETE } from "./actionType";
+import { REGISTER, LOGIN,STATUS_REGISTER,STATUS_LOGIN,DELETE,ONOFF_MODAL } from "./actionType";
 import { registerService, loginService } from "../services/userServices";
 
 export const register = (userName, password) => {
@@ -38,3 +38,9 @@ export const deleteSuccess = () => {
     type: DELETE,
   };
 };
+// export hàm và import vào action -> trả về 1 cái type -> export const bên actionType 
+export const onOffModal = () => {
+  return{
+    type: ONOFF_MODAL
+  }
+}

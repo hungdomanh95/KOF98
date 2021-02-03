@@ -51,7 +51,7 @@ async function updateCharacter(idCharacter,data) {
     return {
       success: false,
       message: "Error Update Character",
-      code: "errorDelete"
+      code: "errorUpdate"
     };
   }else{
     return{
