@@ -10,7 +10,7 @@ import AuthAdmin from "./components/Auth/AuthAdmin";
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
-    <div className="App">
+    <div className="App" >
       <BrowserRouter>
         <Fragment>
           {/* <div className='menu' >

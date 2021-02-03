@@ -1,7 +1,7 @@
 .banner {
     position: relative;
     .banner__bgImage {
-        width: 100%;
+        width:100%;
     }
     .banner__item {
         width: 30%;
@@ -24,35 +24,59 @@
 }
 .showFighter {
     background: url("/images/Background (Vo si).png") ;
-    padding-top: 150px;
-    background-size: cover;
+    padding-top: 200px;
+    background-size: contain no-repeat;
     .show__bgImages {
         width: 100%;
     }
     .show__List {
-        width: 90%;
+        max-width: 1200px;
         margin:0 auto;
         display: grid;
-        grid-template-columns: 50% 50%;
-        h3 {
+        grid-template-columns: repeat(3,1fr);
+        h5 {
             color: rgb(232, 229, 48);
         }
         .list__content {
             display: grid;
-            grid-template-columns: repeat(6,1fr);
+            grid-template-columns: repeat(3,1fr);
             grid-gap:10px;
             .list__detail {
                 text-align: center;
                 cursor: pointer;
                 width: 100%;
                 img {
-                    width: 80px;
+                    width: 100px;
                 }
                 p {
                     color: white;
                     text-align: center;
                 }
             }
+        }
+    }
+}
+@media screen and (max-width:900px){
+    .banner{
+        .banner__item{
+            display:none;
+        }
+        .banner__link{
+            width: 100%;
+        }
+    }
+    .showFighter{
+        background-size:contain no-repeat;
+        .show__List{
+            grid-template-columns: repeat(2,1fr);
+            padding:0 20px;
+        }
+    }
+}
+@media screen and (max-width:500px){
+    .showFighter{
+        .show__List{
+            grid-template-columns:auto;
         }
     }
 }
