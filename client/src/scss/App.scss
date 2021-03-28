@@ -1,4 +1,8 @@
 .App {
+  background-image: url(/images/Background2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
   .menu{
     display: grid;
     grid-template-columns: repeat(3,calc(100%/3));
@@ -14,14 +18,18 @@
   }
  
 }
+// @media only screen and (max-width: 768px) and (orientation: portrait) {
+//   .App {
+//       background-position: center center;
+//   }
+// }
 
 @import "./mixin.scss";
 @import "./btn.scss";
 @import "./admin.scss";
 @import "./fighter.scss";
 @import "./home.scss";
-<<<<<<< HEAD
-@import "./modal.scss"
-=======
-@import "./modalFighter.scss"
->>>>>>> c9ead90bd136e3a9479312ba67f40822d66bc095
+@import "./modal.scss";
+@import "./nofitication.scss";
+@import "./listcharacter.scss";
+@import "./HomePage.scss"

@@ -8,6 +8,7 @@ import Home from "./components/Home/Home";
 import Auth from "./components/Auth/Auth";
 import AuthAdmin from "./components/Auth/AuthAdmin";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import HomePage from "./components/Home/HomePage";
 function App() {
   return (
     <div className="App" >
@@ -21,6 +22,7 @@ function App() {
 
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route exact path="/HomePage" component={HomePage}/>
             <AuthAdmin path="/admin" component={Admin} />
             <Auth path="/fighter" component={Fighter} />
           </Switch>

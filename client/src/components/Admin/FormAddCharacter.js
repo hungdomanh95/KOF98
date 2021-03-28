@@ -1,17 +1,17 @@
 import React, { Component } from 'react'
 import Admin from '../Admin/Admin'
 import {connect} from 'react-redux'
-import {getAddCharacter,onOffModal} from '../../redux/action/characterAction'
-import {ModalFormAddCharacter} from '../Modal/ModalFormAddCharacter'
+import {getAddCharacter,onOffRequest,onOffNoti} from '../../redux/action/characterAction'
+import Notification from '../Modal/Notification'
 
 class FormAddCharacter extends Component {
     state = {
         data:{},
         value:"",
-        modalStatus: false,
-        statusModal: false,
+        // modalStatus: false,
+        // statusModal: false,
     }
-    addCharacter = (e) => {
+    addCharacter = (e) => { 
         // e.preventDefault();        
         this.props.addCharacter(this.state.value)    
         // this.props.offShowModal()   
@@ -27,39 +27,46 @@ class FormAddCharacter extends Component {
             }
         })
     }
-
-    modalAddCharacter = () => {
-        this.setState({
-            statusModal: !this.state.statusModal
-        })
+    showRequestModal = () => {
+        // console.log("aaaaaaaaaaaa")
+        this.props.RequestModal()
     }
+    openNofitication = (data) => {
+        var params = {
+            type:"ADD_CHARACTER",
+            // dòng 38 data cố định
+            data:data
+        }
+        // this.props.onOffNotification({type:"ADD_CHARACTER",data:data})
+        this.props.onOffNotification(params)
+    }
+
     
     render() {
-        console.log('Listcharacter: ', this.props.Listcharacter.length);
-        // console.log('this.state.value: ', this.state.value);
-        // console.log("this.props.sucessAddCharacter",this.props.sucessAddCharacter)
+        // console.log("this.props.statusRequest",this.props.statusRequest)
+        // console.log("this.props.statusNofitication",this.props.statusNofitication)
     return (
             <div className="formCharacter">
-                <form action="">
-                        <div className="form-group">
+                <div className="modalFormCharacter">
+                    <div className="form-group">
                         <label>Name Character: </label>
                         {/* truyền event vào hàm onChange */}
                         <input name="name" className="form-control" value={this.state.value.name} onChange={(e)=>this.handleChange(e)}></input>
-                        </div>
-                        <div className="form-group">
+                    </div>
+                    <div className="form-group">
                         <label>Team Character: </label>
                         <input name="team" className="form-control" value={this.state.value.team} onChange={(e)=>this.handleChange(e)}></input>
-                        </div>
-                        <div className="form-group">
+                    </div>
+                    <div className="form-group">
                         <label>Intro Character: </label>
                         <input name="intro" className="form-control" value={this.state.value.intro} onChange={(e)=>this.handleChange(e)}></input>
-                        </div>
-                        <div className="buttonEdit">
-                <div onClick={this.addCharacter} className="btn btn-success">ADD</div>
-                {this.state.statusModal && <ModalFormAddCharacter/>}
-                <div onClick={this.modalAddCharacter} className="btn btn-danger">RESET FORM</div>
+                    </div>
+                    
+                    <div className="buttonFormAdd">
+                    <div onClick={()=>{this.openNofitication(this.state.value)}} className="btn btn-danger">ADD</div>
+                    <div onClick={this.showRequestModal} className="btn btn-warning">CLOSE</div>
+                    </div>
                 </div>
-                </form>
             </div>
         )
     }
@@ -69,19 +76,22 @@ const mapStateToProps = (state) => {
     return {
         sucessAddCharacter: state.characterReducer.sucessAddCharacter,
         Listcharacter: state.characterReducer.listcharacter,    
-        statusModal: state.characterReducer.statusModal,    
+        statusRequest: state.characterReducer.statusRequest,
+        statusNofitication: state.characterReducer.statusNofitication,
+        // statusModal: state.characterReducer.statusModal,  
+        // statusModalForm: state.characterReducer.statusModalForm  
     }
 }
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        addCharacter : (value) => {
-            dispatch(getAddCharacter(value))
+        RequestModal: () => {
+            dispatch(onOffRequest());
         },
-        // offShowModal: () => {
-        //     dispatch(onOffModal());
-        // }
+        onOffNotification: (params) => {
+            dispatch(onOffNoti(params));
+        }
     }
 }
 
-export default connect(mapStateToProps,mapDispatchToProps)(FormAddCharacter)
+export default connect(mapStateToProps,mapDispatchToProps)(FormAddCharacter);

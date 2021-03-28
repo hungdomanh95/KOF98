@@ -1,0 +1,17 @@
+.Modal {
+    position: fixed;
+    width: 100%;
+    .showModal {
+      background: rgba(0, 0, 0, 0.5);
+      // width: 100%;
+      height: 100vh;
+      justify-items: center;
+      margin: 0 auto;
+      color: white;
+      .buttonEdit {
+        width: 30%;
+        display: flex;
+        margin: 0 auto;
+      }
+    }
+  }

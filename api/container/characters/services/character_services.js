@@ -21,6 +21,7 @@ async function addCharacter(data) {
   }
 }
 async function deleteCharacter(idCharacter) {
+  console.log('idCharacter: ', idCharacter);
   let deleteCharacter =  await Character.deleteOne({id:idCharacter});
   if(!deleteCharacter) {
     return {
@@ -39,12 +40,17 @@ async function deleteCharacter(idCharacter) {
   }
 }
 async function updateCharacter(idCharacter,data) {
+  console.log("data",data)
+  console.log('idCharacter: ', idCharacter);
   let updateCharacter =  await Character.findOneAndUpdate({
     id:idCharacter
+    
   },
   {
     $set: {
-      intro:data.intro
+      intro:data.intro,
+      team: data.team,
+      name: data.name
     },
   });
   if(!updateCharacter) {
@@ -57,7 +63,7 @@ async function updateCharacter(idCharacter,data) {
     return{
       success:true,
       data:updateCharacter,
-      message:"Add Delete Success !!!",
+      message:"Update Item Success !!!",
       code:"success",
     }
   }

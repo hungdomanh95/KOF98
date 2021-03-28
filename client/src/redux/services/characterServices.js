@@ -5,13 +5,14 @@ const getCharacterService = () => {
 };
 const deleteCharacterService = (idCharacter) => {
   console.log('deleteCharacter: ', idCharacter)
-  return axios.post(`${URL}/characters/deleteCharacter`, idCharacter)
+  return axios.post(`${URL}/characters/deleteCharacter`, {
+    idCharacter})
 };
-const updateCharacterService = (id) => {
-  console.log('updateCharacter: ', )
+const updateCharacterService = (data) => {
+  console.log('updateCharacter:',data )
   return axios.post(`${URL}/characters/updateCharacter`,{
-    data:{id:id}
-  } )
+    data, idCharacter:data.id
+  })
 }
 const addCharacterService = (data) => {
   console.log('introCharacter: ', data);
@@ -20,4 +21,4 @@ const addCharacterService = (data) => {
   });
 };
 
-export{getCharacterService,addCharacterService,deleteCharacterService}
+export{getCharacterService,addCharacterService,deleteCharacterService,updateCharacterService}

@@ -1,36 +1,42 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import { onOffModal } from "../../redux/action/userAction";
+// import React, { Component } from "react";
+// import { connect } from "react-redux";
+// import { onOffModalFormAdd } from "../../redux/action/characterAction";
 
-class ModalFormAddCharacter extends Component {
-  render() {
-    return( 
-    <div>
-        
-        <div className="showModal">
-                <h1>WOULD YOU LIKE ADD NEW ITEM?</h1>
-                <div className="buttonEdit">
-        <div className="btn btn-danger">YES</div>
-        <div className="btn btn-warning">NO</div>
-        </div>
-        </div>
-    </div>
-    )
-}
-}
 
-// const mapStateToProps = (state) => {
-//   return {
-//     statusModal: state.userReducer.statusModal,
-//   };
-// };
+// export default class  ModalFormAddCharacter extends Component {
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        offOnModal: () => {
-            dispatch(onOffModal())
-        }
-    }
- }
+//   // onOffModalForm = () => {
+//   //   this.props.offModalForm()
+//   // }
+  
+//   render() {
+//     // console.log("this.props.statusModalForm", this.props.statusModalForm)   
+//     return (
+//       <div className="modalFormCharacter">
+//         <div className="modalForm">       
+//             <h1>WOULD YOU LIKE ADD NEW ITEM?</h1>
+//           <div className="buttonForm">
+//             <div className="btn btn-danger">YES</div>
+//             <div className="btn btn-warning" onClick={this.onOffModalForm}>NO</div>
+//           </div>
+//         </div>
+//       </div>
+//     );
+//   }
+// }
 
-export { ModalFormAddCharacter };
+// // const mapStateToProps = (state) => {
+// //   return {
+// //     // statusModal: state.characterReducer.statusModal,
+// //     statusModalForm: state.characterReducer.statusModalForm
+// //   };
+// // };
+
+// // const mapDispatchToProps = (dispatch) => {
+// //   return {
+// //     offModalForm: () => {
+// //       dispatch(onOffModalFormAdd());
+// //     },
+// //   };
+// // };
+// // export default connect(null,mapDispatchToProps)(ModalFormAddCharacter);
