@@ -1,0 +1,42 @@
+.formAdmin{
+    position:fixed;
+    top:0;
+    bottom:0;
+    left :0;
+    right:0;
+    .mask{
+        background:rgba(128, 128, 128, 0.521);
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+    }
+    .formContent{
+        border-radius: 5px;
+        top:20px;
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        background-color: white;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        .formHeader{
+            border-bottom:2px solid black
+        }
+        .formBody{
+            height:330px;
+            input{
+                width:100%
+            }
+        }
+        .formFooter{
+            border-top:2px solid black;
+            button{
+                margin:5px 20px 0 0;
+                width: 100px;
+            }
+        }
+    }
+}

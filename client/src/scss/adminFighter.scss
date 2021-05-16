@@ -1,0 +1,43 @@
+.adminFighter{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    .adminMask{
+        background:rgba(128, 128, 128, 0.521);
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        z-index:5;
+    }
+    .adminContent{
+        position: fixed;
+        z-index: 6;
+        background-color: white;
+        top:20px;
+        bottom:20px;
+        left: 50%;
+        border-radius: 5px;
+        width: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        button{
+            margin:5px 20px 0 0;
+            width: 100px;
+        }
+        .adminHeader{
+            border-bottom:2px solid gray;
+        }
+        .adminBody{
+            border-bottom:2px solid gray;
+            overflow-y: scroll;
+            height:500px;
+            img{
+                width: 100px;
+            }
+        }
+    }
+}

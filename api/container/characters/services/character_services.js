@@ -44,7 +44,9 @@ async function updateCharacter(idCharacter,data) {
   },
   {
     $set: {
-      intro:data.intro
+      intro:data.intro,
+      name:data.name,
+      team:data.team
     },
   });
   if(!updateCharacter) {

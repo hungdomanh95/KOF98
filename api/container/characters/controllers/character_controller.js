@@ -14,11 +14,13 @@ router.post("/addCharacter", async (req, res) => {
 });
 router.post("/deleteCharacter", async (req, res) => {
   const idCharacter = req.body.idCharacter
+  console.log('req.body: deleteCharacter', req.body);
   let characters = await character_services.deleteCharacter(idCharacter);
   res.json(characters);
 });
 router.post("/updateCharacter", async (req, res) => {
   const idCharacter = req.body.idCharacter
+  console.log('req.body:updateCharacter ', req.body);
   const data = req.body.data
   let characters = await character_services.updateCharacter(idCharacter,data);
   res.json(characters);

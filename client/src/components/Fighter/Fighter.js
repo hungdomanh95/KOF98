@@ -1,29 +1,32 @@
 import React, { Component } from 'react';
 import {connect} from "react-redux";
-import {getCharacter} from "./../../redux/action/characterAction";
+import {getCharacter,updateInforCharacter} from "./../../redux/action/characterAction";
 import {listImage,listTeam} from "./Listdata";
 import Banner from "./Banner/Banner";
-import ShowFighter from "./ShowFighter/ShowFighter"
+import ShowFighter from "./ShowFighter/ShowFighter";
 import ModalFighter from './ModalFighter/ModalFighter';
+import AdminFighter from "./AdminFighter/AdminFighter";
  class Fighter extends Component {
      state={
         listCharacter:[],
         isRenderModal:false,
-        characterInfor:{}
-     }
-
+        characterInfor:{},}
     componentDidMount=()=>{
-        this.props.saveListCharacter();
+        this.props.getListCharacter();
     }
     componentDidUpdate=(prevProps)=>{
-        if(this.props.characterItems !== prevProps.characterItems){
-         let newListCharacter= this.props.characterItems.map((item,index)=>{
+        if( this.props.characterItems 
+            && 
+            this.props.characterItems 
+            !== 
+            prevProps.characterItems ){
+         let newListCharacter = this.props.characterItems.map((item,index)=>{
              let characterImg = listImage.find((img)=>{
                  return (item.id===img.id)
-                }
-                )
+                })
                 return {...item,...characterImg}
             })
+        this.props.updateNewListCharacter(newListCharacter)
         this.setState({
             listCharacter:newListCharacter
         })
@@ -52,19 +55,23 @@ import ModalFighter from './ModalFighter/ModalFighter';
                     characterInfor={this.state.characterInfor}
                     isRenderModal={this.state.isRenderModal}
                     onCloseModal={this.onCloseModal}/>
+                {this.props.isRenderAdFighter && <AdminFighter />}
             </>
         )
     }
 }
 const mapStateToProps=(state)=>{
     return{
-    characterItems:state.characterReducer.characterItems}
-    
+    characterItems:state.characterReducer.characterItems,
+    isRenderAdFighter: state.characterReducer.isRenderAdFighter}
 };
 const mapDispacthToProps=(dispacth)=>{
     return{
-        saveListCharacter:()=>{
+        getListCharacter:()=>{
             dispacth(getCharacter())
+        },
+        updateNewListCharacter:(data)=>{
+            dispacth(updateInforCharacter(data))
         }
     }
 }

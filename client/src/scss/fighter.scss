@@ -25,7 +25,14 @@
 .showFighter {
     background: url("/images/Background (Vo si).png") ;
     padding-top: 200px;
-    background-size: contain no-repeat;
+    background-size: cover;
+    position:relative;
+    .btn.btn-danger{
+        width: 100px;
+        position:absolute;
+        top:50px;
+        left:40%;
+    }
     .show__bgImages {
         width: 100%;
     }
