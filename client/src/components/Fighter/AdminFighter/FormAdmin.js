@@ -86,7 +86,6 @@ class FormAdmin extends Component {
         const { type } = this.state.paramCharacter;
         return (
             <div className="formAdmin">
-                <div className="mask"></div>
                 <div className="formContent">
                     <div className="formHeader"></div>
                     <div className="formBody">

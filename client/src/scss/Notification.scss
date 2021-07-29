@@ -4,23 +4,17 @@
     left:0;
     right: 0;
     bottom:0;
-    .mask{
-        position: fixed;
-        top:0;
-        left:0;
-        right: 0;
-        bottom:0;
-        background:rgba(128, 128, 128, 0.521);
-    }
+    z-index: 30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .notiContent{
-        left: 50%;
-        transform: translateX(-50%);
         text-align: center;
-        top:20px;
         background: white;
-        position: absolute;
         width: 300px;
         border-radius:5px;
+        box-shadow: 1px 1px 10px  black;
+        animation:openForm 0.3s linear;
         button{
             width:100px;
             margin-left: 10px;

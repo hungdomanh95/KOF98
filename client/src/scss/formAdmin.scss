@@ -1,42 +1,79 @@
 .formAdmin{
+    z-index:20;
     position:fixed;
     top:0;
     bottom:0;
     left :0;
     right:0;
-    .mask{
-        background:rgba(128, 128, 128, 0.521);
-        position: fixed;
-        top:0;
-        left:0;
-        right:0;
-        bottom:0;
-    }
+    align-items: center;
+    display: flex;
     .formContent{
+        margin:0 auto;
         border-radius: 5px;
-        top:20px;
-        position: absolute;
         width: 500px;
-        height: 500px;
         background-color: white;
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
+        box-shadow: 1px 1px 10px black;
+        transition:all 0.5 linear;
+        animation: closeForm 0.4s linear;
+        &.show{
+            animation: openForm 0.3s linear;
+        }
         .formHeader{
-            border-bottom:2px solid black
+            text-align: center;
+            border-bottom:2px solid grey;
         }
         .formBody{
             height:330px;
-            input{
-                width:100%
+            padding:50px;
+            label{
+                display:block;
+                font-weight: bolder;
+                input{
+                    width:100%;
+                    &:focus{
+                        outline: none;
+                    }
+                }
+                span{
+                    font-weight: normal;
+                    color: red;
+                }
             }
         }
         .formFooter{
-            border-top:2px solid black;
+            text-align: center;
+            border-top:2px solid grey;
             button{
-                margin:5px 20px 0 0;
                 width: 100px;
+                margin:5px 5px;
             }
         }
+    }
+}
+@media screen and (max-width:500px){
+    .formAdmin{
+        .formContent{
+            width: 100%;
+        }
+    }
+}
+@keyframes openForm {
+    0%{
+        opacity:0;
+        transform:rotateX(90deg)
+    }
+    100%{
+        opacity: 1;
+        transform:rotateX(0deg)
+    }
+}
+@keyframes closeForm{
+    0%{
+        opacity:1;
+        transform:rotateX(0deg)
+    }
+    100%{
+        opacity: 0;
+        transform:rotateX(90deg)
     }
 }

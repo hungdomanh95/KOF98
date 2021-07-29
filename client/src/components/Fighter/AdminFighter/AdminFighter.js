@@ -31,7 +31,7 @@ class AdminFighter extends Component {
         return (
             <Fragment>
             <div className="adminFighter">
-                <div className="adminMask"></div>
+                {/* <div className="adminMask"></div> */}
                 <div className="adminContent">
                     <div className="adminHeader">
                         <h1>CHARACTERS LIST</h1>

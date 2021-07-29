@@ -532,4 +532,15 @@ const listTeam = [
         team: "Nữ Võ SĨ"
     },
 ]
-export { listImage, listTeam }
+const listSortName = [
+    {
+        sort:"Default"
+    },
+    {
+        sort:"A-Z"
+    },
+    {
+        sort:"Z-A"
+    }
+]
+export { listImage, listTeam,listSortName }

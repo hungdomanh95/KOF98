@@ -8,7 +8,8 @@ import {
   ADD_CHARACTER_SUCCESS,
   DELETE_CHARACTER_SUCCESS,
   EDIT_CHARACTER_SUCCESS,
-  SEVER_REQUEST_LOADING
+  SEVER_REQUEST_LOADING,
+  HANDLE_INFOR_MODAL,
 } from "./actionType";
 import { getCharacterService, addCharacterService ,deleteCharacterService,editCharacterService} from "../services/characterServices";
 
@@ -29,6 +30,12 @@ export const updateInforCharacter = (data) => {
     data
   };
 };
+export const handleInforModal = (paramModal) => {
+  return {
+    type:HANDLE_INFOR_MODAL,
+    data:paramModal
+  }
+}
 export const renderAdminFighter = () => {
   return {
     type: STATUS_ADMIN_FIGHTER,

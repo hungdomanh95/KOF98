@@ -4,40 +4,273 @@
     left:0;
     right:0;
     bottom:0;
-    .adminMask{
-        background:rgba(128, 128, 128, 0.521);
-        position: fixed;
-        top:0;
-        left:0;
-        right:0;
-        bottom:0;
-        z-index:5;
-    }
+    z-index:6;
+    background:rgba(128, 128, 128, 0.521);
+    display:flex;
+    align-items: center;
     .adminContent{
-        position: fixed;
-        z-index: 6;
+        margin: 0 auto;
         background-color: white;
-        top:20px;
-        bottom:20px;
-        left: 50%;
         border-radius: 5px;
-        width: 50%;
-        transform: translateX(-50%);
-        text-align: center;
-        button{
-            margin:5px 20px 0 0;
-            width: 100px;
+        width: 60%;
+        height: 90%;
+        box-shadow: 2px 2px 20px black;
+        animation: closeComponent 0.4s linear;
+        &.show{
+            animation: openComponent 0.3s linear;
         }
         .adminHeader{
-            border-bottom:2px solid gray;
+            border-bottom:2px solid black;
+            text-align: center;
+            height: 6%;
         }
         .adminBody{
-            border-bottom:2px solid gray;
-            overflow-y: scroll;
-            height:500px;
-            img{
+            position: relative;
+            height: 84%;
+            .bodyTitle{
+                padding-bottom: 5px;
+                border-bottom: 2px solid black;
+                .showTitle{
+                    display: grid;
+                    grid-template-columns: repeat(6,1fr);
+                    text-align: center;
+                    p{
+                        margin:0;
+                        font-weight: bold;
+                        font-size:17px;
+                        text-align: center;
+                    }
+                    .titleDetail{
+                        position:relative;
+                        .sortNameButton{
+                            outline: none;
+                            border:none;
+                            position: absolute;
+                            z-index: 10;
+                            left: 50%;
+                            background:white;
+                            transform:translateX(-50%);
+                            font-weight:500;
+                            font-size:17px;
+                            padding:0;
+                        }
+                        .sortNameContent{
+                            box-shadow: 1px 1px 10px black;
+                            height: 0px;
+                            width:100%;
+                            opacity: 0;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            position: absolute;
+                            left: 50%;
+                            top:38px;
+                            transform: translateX(-50%);
+                            visibility: hidden;
+                            .nameDetail{
+                                position: relative;
+                                margin:0;
+                                &::after{
+                                    transition: 0.5s;
+                                    bottom: 0;
+                                    position: absolute;
+                                    content: "";
+                                    height: 3px;
+                                    width: 0%;
+                                    right:0;
+                                }
+                                &:hover{
+                                    cursor: pointer;
+                                    &::after{
+                                        background-color: black;
+                                        width: 100%;
+                                        left:0;
+                                    }
+                                }
+                                &.active{
+                                    background-color:black;
+                                    color:yellow;
+                                }
+                            }   
+                            &.show{
+                                visibility: visible;
+                                opacity: 1;
+                                transition: all 0.5s;
+                                background:yellow;
+                                border-radius:5px;
+                                height: 100px;
+                            }
+                        }
+                        .sortTeamButton{
+                            outline: none;
+                            position: absolute;
+                            left:50%;
+                            transform:translateX(-50%);
+                            z-index:10;
+                            border:none;
+                            background:white;
+                            font-weight: bolder;
+                            font-weight:500;
+                            font-size:17px;
+                            padding:0;
+                        }
+                        .sortTeamContent{
+                            box-shadow: 1px 1px 10px black;
+                            height: 0px;
+                            width:150%;
+                            opacity: 0;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            position: absolute;
+                            left: 50%;
+                            top:38px;
+                            transform: translateX(-50%);
+                            visibility: hidden;
+                            .teamDetail{
+                                position: relative;
+                                margin:0;
+                                &::after{
+                                    transition: 0.5s;
+                                    bottom: 0;
+                                    position: absolute;
+                                    content: "";
+                                    height: 3px;
+                                    width: 0%;
+                                    right:0;
+                                }
+                                &:hover{
+                                    cursor: pointer;
+                                    &::after{
+                                        background-color: black;
+                                        width: 100%;
+                                        left:0;
+                                    }
+                                }
+                                &.active{
+                                    background-color:black;
+                                    color:yellow;
+                                }
+                            }   
+                            &.show{
+                                visibility: visible;
+                                opacity: 1;
+                                transition: all 0.5s;
+                                background:yellow;
+                                border-radius:5px;
+                                height: 200px;
+                            }
+                        }
+                    }
+                }
+            }
+            .showCharacter{
+                height: 79%;
+                overflow-y: scroll;
+                .characterDetail{
+                    text-align: center;
+                    display: grid;
+                    grid-template-columns: repeat(6,1fr);
+                    align-items: center;
+                    img{
+                        width:100%;
+                    }
+                    button{
+                        padding:0;
+                        width:70px;
+                        margin:0 auto;
+                    }
+                }
+            }
+        }
+        .adminFooter{
+            height: 10%;
+            text-align: center;
+            button{
+                margin:5px 5px;
                 width: 100px;
             }
         }
+    }
+}
+@media screen and (max-width:900px){
+    .adminFighter{
+        .adminContent{
+            width:70%;
+            .adminBody{
+                height:87%;
+                .bodyTitle{
+                    .showTitle{
+                        .titleDetail{
+                            .sortTeamContent{
+                                width: 200%;
+                            }
+                        }
+                    }
+                }
+                .showCharacter{
+                    height: 87%;
+                }
+            }
+            .adminFooter{
+                height: 10%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px){
+    .adminFighter{
+        .adminContent{
+            font-size: 10px;
+            width:100%;
+            .adminBody{
+                height:84%;
+                .bodyTitle{
+                    .showTitle{
+                        .titleDetail{
+                            .sortTeamContent{
+                                width: 250%;
+                            }
+                        }
+                    }
+                }
+                .showCharacter{
+                    height:78%;
+                    .characterDetail{
+                        button{
+                            width:50px;
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+            .adminFooter{
+                button{
+                    width:70px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}  
+@keyframes openComponent {
+    0%{
+        transform:scale(0.5);
+        opacity: 0;
+    }
+    100%{
+        height:100%;
+        opacity: 1;
+    }
+}
+@keyframes closeComponent{
+    0%{
+        transform:scale(1);
+        opacity:1;
+    }
+    100%{
+        transform:scale(0.5);
+        opacity:0;
     }
 }

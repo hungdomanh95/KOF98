@@ -10,16 +10,13 @@ import AdminFighter from "./AdminFighter/AdminFighter";
      state={
         listCharacter:[],
         isRenderModal:false,
-        characterInfor:{},}
+        characterInfor:{},
+    }
     componentDidMount=()=>{
         this.props.getListCharacter();
     }
     componentDidUpdate=(prevProps)=>{
-        if( this.props.characterItems 
-            && 
-            this.props.characterItems 
-            !== 
-            prevProps.characterItems ){
+        if( this.props.characterItems && this.props.characterItems !==  prevProps.characterItems ){
          let newListCharacter = this.props.characterItems.map((item,index)=>{
              let characterImg = listImage.find((img)=>{
                  return (item.id===img.id)

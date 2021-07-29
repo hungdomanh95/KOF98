@@ -8,17 +8,18 @@ import {
   ADD_CHARACTER_SUCCESS,
   DELETE_CHARACTER_SUCCESS,
   EDIT_CHARACTER_SUCCESS,
-  SEVER_REQUEST_LOADING
+  SEVER_REQUEST_LOADING,
+  HANDLE_INFOR_MODAL,
 } from "../action/actionType";
-const isRenderAdFighter = false;
-const isRenderFormAdmin = false;
-const isRenderNoti = false ;
-const isLoading = false;
-const characterReducer = (state = { isRenderAdFighter, 
-                                    isRenderFormAdmin,
-                                    isRenderNoti,
-                                    isLoading,
-                                }, action) => {
+const initState = {
+   isRenderModal : false,
+   isRenderAdFighter : false,
+   isRenderFormAdmin : false,
+   isRenderNoti : false ,
+   isLoading : false
+} 
+
+const characterReducer = (state = initState, action) => {
   switch (action.type) {
     case GET_DATA:
       return {
@@ -36,6 +37,12 @@ const characterReducer = (state = { isRenderAdFighter,
         ...state,
         newListCharacter: action.data
       }
+    case HANDLE_INFOR_MODAL:
+      return {
+        ...state,
+        isRenderModal:action.data.isRenderModal,
+        paramModal:action.data.data
+      }
     case STATUS_ADMIN_FIGHTER:
       return {
         ...state, 
@@ -44,7 +51,7 @@ const characterReducer = (state = { isRenderAdFighter,
     case GET_PARAM_NOTI:
       return{
         ...state,
-        paramCharacter:action.data,
+        paramNoti:action.data,
         isRenderNoti:action.data.isRenderNoti,
         isAddSuccess:false,
         isDeleteSuccess:false,
@@ -54,7 +61,7 @@ const characterReducer = (state = { isRenderAdFighter,
       return{
         ...state,
         isRenderFormAdmin:action.data.isRenderForm,
-        paramForm:action.data
+        paramForm:action.data.data,
     }
     case SEVER_REQUEST_LOADING:
       return{

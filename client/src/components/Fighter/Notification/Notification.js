@@ -4,8 +4,7 @@ import {getCharacter,handleParamNoti,addCharacter,deleteCharacter,editCharacter}
 class Notification extends Component {
     componentDidMount=()=>{
         const {isAddSuccess,isDeleteSuccess,isEditSuccess} = this.props
-        if(isAddSuccess || isDeleteSuccess || isEditSuccess)
-        this.props.getListCharacter()
+        if(isAddSuccess || isDeleteSuccess || isEditSuccess) this.props.getListCharacter()
     }
     handleButtonCancel=()=>{
         let paramNoti={
@@ -29,7 +28,6 @@ class Notification extends Component {
         const{isAddSuccess,isDeleteSuccess,isEditSuccess} =  this.props;
         return (
             <div className="notification">
-                <div className="mask"></div>
                 <div className="notiContent">
                     <div className="notiHeader"></div>
                     <div className="notiBody">

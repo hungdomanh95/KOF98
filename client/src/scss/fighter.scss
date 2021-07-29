@@ -1,63 +1,58 @@
 .banner {
     position: relative;
-    .banner__bgImage {
-        width:100%;
+    .bannerBackground {
+        img{
+            width: 100%;
+        }
     }
-    .banner__item {
+    .bannerLogo {
+        top:0;
+        width:100%;
+        position:absolute;
+        text-align: center;
+        z-index:5;
+        img{
+            width:18%;
+        }
+    }
+    .bannerCharacter {
         width: 30%;
         position: absolute;
-        top: 31%;
+        top: 20%;
         left: 10%;
     }
-    .banner__link {
-        width: 60%;
+    .bannerLink {
+        width: 70%;
         left: 50%;
         bottom: 10%;
         transform: translateX(-50%);
         position: absolute;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        img {
-            width: 100%;
-        }
-    }
-}
-.showFighter {
-    background: url("/images/Background (Vo si).png") ;
-    padding-top: 200px;
-    background-size: cover;
-    position:relative;
-    .btn.btn-danger{
-        width: 100px;
-        position:absolute;
-        top:50px;
-        left:40%;
-    }
-    .show__bgImages {
-        width: 100%;
-    }
-    .show__List {
-        max-width: 1200px;
-        margin:0 auto;
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        h5 {
-            color: rgb(232, 229, 48);
-        }
-        .list__content {
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-            grid-gap:10px;
-            .list__detail {
-                text-align: center;
-                cursor: pointer;
+        .bannerItem{
+            position: relative;
+            img {
+                transition:all 0.5s;
                 width: 100%;
-                img {
-                    width: 100px;
+            }
+            span{
+                transition:all 0.5s;
+                opacity: 0;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                color: blanchedalmond;
+                font-size: 30px;
+                font-style: italic;
+            }
+            &:hover{
+                cursor: pointer;
+                img{
+                    transform: translate(20px,-20px);
                 }
-                p {
-                    color: white;
-                    text-align: center;
+                span{
+                    opacity: 1;
                 }
             }
         }
@@ -65,25 +60,27 @@
 }
 @media screen and (max-width:900px){
     .banner{
-        .banner__item{
-            display:none;
-        }
-        .banner__link{
-            width: 100%;
-        }
+        .bannerLogo{
+         img{
+             width:20%;
+         }
+     }
     }
-    .showFighter{
-        background-size:contain no-repeat;
-        .show__List{
-            grid-template-columns: repeat(2,1fr);
-            padding:0 20px;
-        }
-    }
+ 
 }
 @media screen and (max-width:500px){
-    .showFighter{
-        .show__List{
-            grid-template-columns:auto;
+   .banner{
+       .bannerLogo{
+        img{
+            width:17%;
         }
     }
+    .bannerLink{
+        .bannerItem{
+            span{
+                font-size: 15px;
+            }
+        }
+    }
+   }
 }
