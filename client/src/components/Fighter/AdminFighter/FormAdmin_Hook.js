@@ -1,10 +1,8 @@
-import React,{useState,useEffect} from 'react';
+import React,{ useState } from 'react';
 import { useDispatch,useSelector } from 'react-redux';
 import { handleParamForm,handleParamNoti } from '../../../redux/action/characterAction';
 export default function FormAdmin_Hook(props) {
     const dispatch = useDispatch();
-    // Data from AdminFighter_Hook
-    const {isRenderFormAdmin} = props;
     // Data from store
     const {characterItems,paramForm} = useSelector((state)=>state.characterReducer);
     const {item,type} = paramForm;
@@ -36,7 +34,7 @@ export default function FormAdmin_Hook(props) {
             data:inforEdit
         }
         //Check type để xem chức năng là gữi thông tin nhân vật edit hay gửi thông tin nhân vật mới
-        if(checkName&&checkTeam&&checkImages)
+        if( checkName && checkTeam && checkImages )
         dispatch(handleParamNoti(type==="EDIT" ? paramEdit : paramAdd)) 
     }
     // Function check input empty
@@ -65,7 +63,7 @@ export default function FormAdmin_Hook(props) {
     }
     return (
         <div className="formAdmin">
-            <div className={`formContent ${isRenderFormAdmin ? "show" : ""}`}>
+            <div className={`formContent ${props.isRenderFormAdmin ? "show" : ""}`}>
                 <div className="formHeader">
                     {type==="EDIT" ? <h3>EDIT CHARACTER</h3> : <h3>ADD CHARACTER</h3>}
                 </div>

@@ -5,23 +5,8 @@ export default function ModalFighterHook(props) {
     const dispatch = useDispatch();
     //Data from store 
     const {paramModal} = useSelector(state => state.characterReducer);
-    const {isRenderModal} = props;
-    const { name,
-            images__card,
-            intro,fate,
-            equipment,
-            infor,
-            soul__energy,
-            hidden__charm,
-            passive1,
-            passive2,
-            thunderElement,
-            waterElement,
-            skill,
-            ultimate,
-            strongest,
-            weakness,
-            } = paramModal;
+    const { name,images__card,intro,fate,equipment,infor,soul__energy,hidden__charm,passive1,passive2,thunderElement,
+            waterElement,skill,ultimate,strongest,weakness} = paramModal;
     //Function close modal
     const handleCloseModal = () => {
         let param = {
@@ -30,15 +15,49 @@ export default function ModalFighterHook(props) {
         }
         dispatch(handleInforModal(param))
     };
-    //Close modal when press ESC button on the keypoard
+    const renderInforBasic = (title,infor,nameClass) => {
+        if(infor.length > 0) {
+            return (
+                <>
+                    <h5>{title}</h5>
+                    <div className={nameClass}>
+                        {infor.map((item,index)=>
+                            <img key={index} src={item} alt="" />
+                        )}
+                    </div>
+                </>
+            )
+        }
+    }
+    const renderInforDetail = (title,infor,nameClass) => {
+        if(infor.content) 
+            return (
+            <div className={nameClass}>
+                <h5>{title} : {infor.title}</h5>
+                {infor.content.map((item,index)=>
+                    <p key={index}>_{item}</p>
+                )}
+            </div>
+            )
+        else return (
+            <div className={nameClass}>
+                <h5>{title} :</h5>
+                {infor.map((item,index)=>
+                    <p key={index}>_{item}</p>
+                )}
+            </div>
+        )
+    }
+        //Close modal when press ESC button on the keypoard
     useEffect(()=>{
-        document.addEventListener("keyup",(e)=>{
-            if(e.keyCode===27) handleCloseModal()
+        document.addEventListener("keyup",(e)=>{    
+            console.log(e)
+            if(e.code=="Escape") handleCloseModal()
         })
     },[])
     return (
         <div className="modalFighter">
-            <div className={`modalContent ${isRenderModal ? "show" : ""}`}>
+            <div className={`modalContent ${props.isRenderModal ? "show" : ""}`}>
                 <div className="modalHeader">
                     <i  className="fa fa-times-circle"
                         onClick={handleCloseModal}
@@ -69,87 +88,32 @@ export default function ModalFighterHook(props) {
                                 )}
                             </div>
                             <div className="characterEquipment">
-                                <h5>Trang Bị :</h5>
-                                <div className="equipmentContent">
-                                {equipment.map((item,index)=>
-                                    <img src={item} alt="" key={index}/>
-                                )}
-                                </div>
+                                {renderInforBasic("Trang Bị",equipment,"equipmentContent")}
                             </div>
                             <div className="characterSoulForce">
-                                <h5>Hồn Lực :</h5>
-                                <div className="soulForceContent">
-                                {soul__energy.map((item,index)=>
-                                    <img src={item} alt="" key={index}/> 
-                                )}
-                                </div>
+                                {renderInforBasic("Hồn Lực",soul__energy,"soulForceContent")}
                             </div>
                             <div className="characterHiddenFate">
-                                <h5>Duyên Ngầm :</h5>
-                                <div className="hiddenFateContent">
-                                {hidden__charm.map((item,index)=>
-                                    <img src={item} alt="" key={index}/>
-                                )}
-                                </div>
+                                {renderInforBasic("Duyên Ngầm",hidden__charm,"hiddenFateContent")}
                             </div>
                         </div>
                     </div>
                     <div className="characterDetail">
                         <div className="detailInfor">
-                            <div className="detailItems">
-                                <h5>*Nội tại 1: {passive1.title}</h5>
-                                {passive1.content.map((item,index)=>
-                                    <p key={index}>_{item}</p>
-                                )}
-                            </div>
-                            <div className="detailItems">
-                                <h5>*Nội tại 2: {passive2.title}</h5>
-                                {passive2.content.map((item,index)=>
-                                    <p key={index}>_{item}</p>
-                                )}
-                            </div>
+                            {renderInforDetail("*Nội tại 1",passive1,"detailItems")}
+                            {renderInforDetail("*Nội tại 2",passive2,"detailItems")}
                         </div>
                         <div className="detailInfor">
-                            <div className="detailItems">
-                                <h5>*Nhị môn :</h5>
-                                {thunderElement.map((item,index)=>
-                                    <p key={index}>_{item}</p>
-                                )}
-                            </div>
-                            <div className="detailItems">
-                                <h5>*Tứ Môn :</h5>
-                                {waterElement.map((item,index)=>
-                                    <p key={index}>_{item}</p>
-                                )}
-                            </div>
+                            {renderInforDetail("*Nhị môn",thunderElement,"detailItems")}
+                            {renderInforDetail("*Tứ Môn",waterElement,"detailItems")}
                         </div>
                         <div className="detailInfor">
-                            <div className="detailItems">
-                                <h5>*Độc Chiêu : {skill.title}</h5>
-                                {skill.content.map((item,index)=>
-                                    <p key={index}>_{item}</p>
-                                )}
-                            </div>
-                            <div className="detailItems">
-                                <h5>*Tuyệt Kĩ : {ultimate.title}</h5>
-                                {ultimate.content.map((item,index)=>
-                                    <p key={index}>_{item}</p>
-                                )}
-                            </div>
+                            {renderInforDetail("Độc Chiêu",skill,"detailItems")}
+                            {renderInforDetail("Tuyệt Kĩ",ultimate,"detailItems")}
                         </div>
                         <div className="detailInfor">
-                            <div className="detailItems">
-                                <h5>*Ưu Điểm :</h5>
-                                {strongest.map((item,index)=>
-                                    <p key={index}>_{item}</p>
-                                )}
-                            </div>
-                            <div className="detailItems">
-                                <h5>*Nhược Điểm :</h5>
-                                {weakness.map((item,index)=>
-                                    <p key={index}>_{item}</p>
-                                )}
-                            </div>
+                            {renderInforDetail("*Ưu điểm",strongest,"detailItems")}
+                            {renderInforDetail("*Nhược điểm",weakness,"detailItems")}
                         </div>
                     </div>
                 </div>

@@ -16,7 +16,7 @@ export default function ControlSearch(props) {
     //   nhưng useMemo sau khi thực thi trả về 1 giá trị bên ngoài hàm
     // - Hàm toLowerCase chuyển đổi tất cả các kí tự về chữ thưởng
     const listSearchCharacter =  useMemo(()=>{
-        if(searchText)
+        if(searchText.length>0)
         return newListCharacter.filter((item)=>{
             let nameLower = item.name.toLowerCase()  
             let searchLower = searchText.toLowerCase()
@@ -24,19 +24,19 @@ export default function ControlSearch(props) {
         })
         else return newListCharacter
     },[searchText,newListCharacter])    
-    console.log(nameSort)
     // const listSearchAndSortName = useMemo(()=>{
+    //     console.log(nameSort)
     //     let indexSort  = 0;
-    //     if(nameSort === "A-Z") indexSort = -1;
-    //     if(nameSort === "Z-A") indexSort = 1;
-    //     if(nameSort ==="Default") indexSort = 0;
+    //     if(nameSort == "A-Z") indexSort = -1;
+    //     if(nameSort == "Z-A") indexSort = 1;
+    //     if(nameSort == "Default") indexSort = 0;
     //     return listSearchCharacter.sort((a,b)=>{
     //         console.log(indexSort)
-    //         if(a.name.toLowerCase()<b.name.toLowerCase()) return indexSort*(-1)
+    //         if(a.name.toLowerCase()<b.name.toLowerCase()) return indexSort*(1)
     //         else if(a.name.toLowerCase()>b.name.toLowerCase()) return indexSort*(1)
-    //         else return indexSort*0
+    //         else return indexSort*1
     //     })
-    // },[nameSort,listSearchCharacter])
+    // },[nameSort,listSearchCharacter,newListCharacter])
     const listSearchSortNameAndTeam = useMemo(()=>{
         if(teamSort !== "All")
             return listSearchCharacter.filter((item)=>{

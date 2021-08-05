@@ -28,13 +28,13 @@ export default function ShowTeam_Hook(props) {
         <div className="showTeam">
             <h5>Team {props.team}</h5>
             <div className="teamItems">
-                {newList && newList.map((item,index)=>
+                {newList.length && newList.map((item,index)=>
                     <div 
                         className="itemContent" 
                         key={index}
                         onClick={()=>{handleCharacter(item)}}
                     >
-                        <img src={item.images}/>
+                        <img src={item.images} alt=""/>
                         <p>{item.name}</p>
                     </div>
                 )}

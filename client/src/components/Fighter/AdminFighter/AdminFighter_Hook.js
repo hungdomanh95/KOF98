@@ -1,4 +1,4 @@
-import React,{useState,useEffect}from 'react';
+import React,{ useState,useEffect }from 'react';
 import { useSelector,useDispatch } from 'react-redux';
 import { renderAdminFighter,handleParamForm,handleParamNoti } from '../../../redux/action/characterAction';
 import FormAdmin_Hook from './FormAdmin_Hook';
@@ -8,13 +8,8 @@ import ControlSearchSort from '../Search-Sort/ControlSearchSort';
 import { listTeam,listSortName } from '../Listdata';
 export default function AdminFighter_Hook(props) {
     const dispatch = useDispatch();
-    //Data from component Fighter_Hook
-    const {isRenderAdFighter} = props;
     //Data from store
-    const { newListCharacter,
-            isRenderFormAdmin,
-            isRenderNoti,
-            isLoading} = useSelector((state)=>state.characterReducer);
+    const { newListCharacter,isRenderFormAdmin,isRenderNoti,isLoading} = useSelector((state)=>state.characterReducer);
     // Created array listcharacter to receiver data after search and sort then render listcharacter
     const [listCharacter,setListCharater] = useState([]);
     //Variable check to open or close sortNameContent
@@ -26,10 +21,7 @@ export default function AdminFighter_Hook(props) {
     const [isDelayFormAdmin,setIsDelayFormAdmin] = useState(false);
     //Set delay time to run animation when open or close component FormAdmin_Hook
     useEffect(()=>{
-        if(isRenderFormAdmin) setIsDelayFormAdmin(true)
-        else setTimeout(()=>{
-            setIsDelayFormAdmin(false)
-        },300)
+        props.setTimeDelay(isRenderFormAdmin,setIsDelayFormAdmin)
     },[isRenderFormAdmin]);
     //Function render FormAdmin_Hook and send data when click ADD or EDIT button
     const handleShowForm=(data)=>{
@@ -76,7 +68,7 @@ export default function AdminFighter_Hook(props) {
     };
     return (
         <div className="adminFighter">
-            <div className={`adminContent ${isRenderAdFighter ? "show" : ""}`}>
+            <div className={`adminContent ${props.isRenderAdFighter ? "show" : ""}`}>
                 <div className="adminHeader">
                     <h3>LIST CHARACTER</h3>
                 </div>
@@ -89,18 +81,18 @@ export default function AdminFighter_Hook(props) {
                                 nameSort={nameSort}
                         />
                     </div>
-                    <div className="bodyTitle">
+                    <div className="showCharacter">
                         <div className="showTitle">
                             <div className="titleDetail">
-                                <p>No.</p>
+                                No.
                             </div>
                             <div className="titleDetail">
-                                <button 
+                                <div 
                                     className="sortNameButton"
                                     onClick={handleButtonSortName}
                                 >
                                     Name ↓
-                                </button>
+                                </div>
                                 <div 
                                     className={`sortNameContent ${isRenderSortName ? "show" : ""}`}
                                     id="sortNameContent"
@@ -117,12 +109,12 @@ export default function AdminFighter_Hook(props) {
                                 </div>
                             </div>
                             <div className="titleDetail">
-                                <button 
+                                <div 
                                     className="sortTeamButton"
                                     onClick={handleButtonSortTeam}    
                                 >
                                     Team ↓
-                                </button>
+                                </div>
                                 <div 
                                     className={`sortTeamContent ${isRenderSortTeam ? "show" : ""}`} 
                                     id="sortTeamContent"
@@ -131,7 +123,7 @@ export default function AdminFighter_Hook(props) {
                                         className={`teamDetail ${teamSort == "All" ? "active":""}`}
                                         onClick={()=>{handleSortTeam("All")}}
                                     >
-                                            All
+                                         All
                                     </p>
                                     {listTeam.map((item,index)=>
                                         <p 
@@ -145,11 +137,11 @@ export default function AdminFighter_Hook(props) {
                                 </div>
                             </div>
                             <div className="titleDetail">
-                                <p>Images</p>
+                                Images
                             </div>
                         </div>
                     </div>
-                    <div className="showCharacter">
+                    <div className="showBody">
                         {listCharacter.map((item,index)=>
                             <div className="characterDetail" key={index}>
                                 <p>{index + 1}</p>

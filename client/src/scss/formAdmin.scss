@@ -1,14 +1,7 @@
 .formAdmin{
     z-index:20;
-    position:fixed;
-    top:0;
-    bottom:0;
-    left :0;
-    right:0;
-    align-items: center;
-    display: flex;
+   @include setPosition();
     .formContent{
-        margin:0 auto;
         border-radius: 5px;
         width: 500px;
         background-color: white;

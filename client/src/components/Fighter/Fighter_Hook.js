@@ -1,7 +1,7 @@
-import React ,{useEffect,useState }from 'react';
-import {useDispatch, useSelector} from "react-redux";
-import {listImage} from "./Listdata";
-import {getCharacter,updateInforCharacter} from "../../redux/action/characterAction";
+import React ,{ useEffect,useState }from 'react';
+import { useDispatch, useSelector } from "react-redux";
+import { listImage } from "./Listdata";
+import { getCharacter,updateInforCharacter } from "../../redux/action/characterAction";
 import Banner_Hook from "./Banner/Banner_Hook";
 import ShowFighter_Hook from "./ShowFighter/ShowFighter_Hook";
 import ModalFighter_Hook from "./ModalFighter/ModalFighter_Hook";
@@ -9,26 +9,22 @@ import AdminFighter_Hook from './AdminFighter/AdminFighter_Hook';
 export default function Fighter_Hook() {
     const dispatch = useDispatch();
     //Data from store
-    const { characterItems,
-            isRenderModal,
-            isRenderAdFighter} = useSelector(state => state.characterReducer);
+    const { characterItems,isRenderModal,isRenderAdFighter } = useSelector(state => state.characterReducer);
     const [isDelayAdFighter,setIsDelayAdFighter] = useState(false);
     const [isDelayModal,setIsDelayModal] = useState(false);
     //Call api getListCharacter to dispatch to store
     useEffect(()=>{dispatch(getCharacter())},[])
+    //Function set delay time to run animation when open or close component
+    const setTimeDelay = (isCheck,setDelay) => {
+        {isCheck ? setDelay(true) : setTimeout(()=>{setDelay(false)},300)}
+    }
     //Set delay time to run animation when open or close component AdminFighter_Hook
     useEffect(()=>{
-        if(isRenderAdFighter) setIsDelayAdFighter(true)
-        else setTimeout(()=>{
-            setIsDelayAdFighter(false)
-        },300)
+        setTimeDelay(isRenderAdFighter,setIsDelayAdFighter)
     },[isRenderAdFighter])
     //Set delay time to run animation when open or close component ModalFighter_Hook
     useEffect(()=>{
-        if(isRenderModal) setIsDelayModal(true)
-        else setTimeout(()=>{
-            setIsDelayModal(false)
-        },300)
+        setTimeDelay(isRenderModal,setIsDelayModal)
     },[isRenderModal])
     //Add images from listImages to data from store
     useEffect(()=>{
@@ -53,7 +49,9 @@ export default function Fighter_Hook() {
             <Banner_Hook />
             <ShowFighter_Hook />
             {isDelayModal && <ModalFighter_Hook isRenderModal={isRenderModal}/>}
-            {isDelayAdFighter && <AdminFighter_Hook isRenderAdFighter={isRenderAdFighter}/>}
+            {isDelayAdFighter && <AdminFighter_Hook 
+                isRenderAdFighter={isRenderAdFighter} 
+                setTimeDelay={setTimeDelay}/>}
         </>
         )
     }
