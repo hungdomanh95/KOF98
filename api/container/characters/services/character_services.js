@@ -21,7 +21,7 @@ async function addCharacter(data) {
   }
 }
 async function deleteCharacter(idCharacter) {
-  let deleteCharacter =  await Character.deleteOne({id:idCharacter});
+  let deleteCharacter =  await Character.findOneAndDelete({id:idCharacter});
   if(!deleteCharacter) {
     return {
       success: false,
@@ -34,7 +34,6 @@ async function deleteCharacter(idCharacter) {
       data:deleteCharacter,
       message:"Add Delete Success !!!",
       code:"success",
-
     }
   }
 }
@@ -48,7 +47,9 @@ async function updateCharacter(idCharacter,data) {
       name:data.name,
       team:data.team
     },
-  });
+  },
+  {new: true}
+  );
   if(!updateCharacter) {
     return {
       success: false,

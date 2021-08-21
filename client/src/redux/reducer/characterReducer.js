@@ -20,6 +20,13 @@ const initState = {
 } 
 
 const characterReducer = (state = initState, action) => {
+  const searchIndex = (listSearch,id) => {
+    let indexSearch = -1;
+    listSearch.map((item,index)=>{
+      if(item.id===id) indexSearch = index
+    })
+    return indexSearch
+  }
   switch (action.type) {
     case GET_DATA:
       return {
@@ -53,9 +60,10 @@ const characterReducer = (state = initState, action) => {
         ...state,
         paramNoti:action.data,
         isRenderNoti:action.data.isRenderNoti,
-        isAddSuccess:false,
-        isDeleteSuccess:false,
-        isEditSuccess:false
+        isAddSuccess:action.data.isAddSuccess,
+        isDeleteSuccess:action.data.isDeleteSuccess,
+        isEditSuccess:action.data.isEditSuccess,
+        isLoading:action.data.isRenderLoading,
       }
     case GET_PARAM_FORM:
       return{
@@ -63,36 +71,43 @@ const characterReducer = (state = initState, action) => {
         isRenderFormAdmin:action.data.isRenderForm,
         paramForm:action.data.data,
     }
-    case SEVER_REQUEST_LOADING:
-      return{
-        ...state,
-        isRenderFormAdmin:false,
-        isRenderNoti:false,
-        isLoading:true,
-      }
+    // case SEVER_REQUEST_LOADING:
+    //   return{
+    //     ...state,
+    //     isRenderFormAdmin:false,
+    //     isRenderNoti:false,
+    //     isLoading:true,
+    //   }
     case ADD_CHARACTER_SUCCESS:
       return{
         ...state,
         isAddSuccess:action.data.data.success,
-        // characterItems: [...state.characterItems,...action.data.data.data],
-        isRenderNoti:true,
-        isLoading:false,
+        characterItems: [...state.characterItems,...action.data.data.data],
+        // isRenderNoti:true,
+        // isLoading:false,
       }
     case DELETE_CHARACTER_SUCCESS:
+      let indexDelete = searchIndex(state.characterItems,action.data.data.data.id)
+      state.characterItems.splice(indexDelete,1)
       return{
         ...state,
         isDeleteSuccess:action.data.data.success,
-        isRenderNoti:true,
-        isLoading:false
+        characterItems:[...state.characterItems]
+        
+        // isRenderNoti:true,
+        // isLoading:false
       }
     case EDIT_CHARACTER_SUCCESS:
+      let indexEdit = searchIndex(state.characterItems,action.data.data.data.id)
+      state.characterItems.splice(indexEdit,1,action.data.data.data)
       return{
         ...state,
         isEditSuccess:action.data.data.success,
-        isRenderNoti:true,
-        isLoading:false,
+        characterItems:[...state.characterItems]
+        // isRenderNoti:true,
+        // isLoading:false,
       }
-    default: 
+      default: 
       return state;
   }
 };

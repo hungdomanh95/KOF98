@@ -9,7 +9,9 @@ import { listTeam,listSortName } from '../Listdata';
 export default function AdminFighter_Hook(props) {
     const dispatch = useDispatch();
     //Data from store
-    const { newListCharacter,isRenderFormAdmin,isRenderNoti,isLoading} = useSelector((state)=>state.characterReducer);
+    const { newListCharacter,isRenderFormAdmin,isRenderNoti,isLoading,
+            isAddSuccess,isDeleteSuccess,isEditSuccess        
+    } = useSelector((state)=>state.characterReducer);
     // Created array listcharacter to receiver data after search and sort then render listcharacter
     const [listCharacter,setListCharater] = useState([]);
     //Variable check to open or close sortNameContent
@@ -57,15 +59,25 @@ export default function AdminFighter_Hook(props) {
     //Function take value when click sortNameItem and close sortNameContent after that
     const handleSortName = (item) => {
         setNameSort(item)
-        {isRenderSortName && document.getElementById("sortNameContent").classList.remove("show")}
         setIsRenderSortName(false)
     };
     //Function take value when click sortTeamItem and close sortTeamContent after that
     const handleSortTeam = (item) => {
         setTeamSort(item)
-        {isRenderSortTeam && document.getElementById("sortTeamContent").classList.remove("show")}
         setIsRenderSortTeam(false)
     };
+    useEffect(()=>{
+        if(isAddSuccess)
+        dispatch(handleParamNoti({isAddSuccess:true,isLoading:false,isRenderNoti:true}))
+    },[isAddSuccess])
+    useEffect(()=>{
+        if(isDeleteSuccess)
+        dispatch(handleParamNoti({isDeleteSuccess:true,isLoading:false,isRenderNoti:true}))
+    },[isDeleteSuccess])
+    useEffect(()=>{
+        if(isEditSuccess)
+        dispatch(handleParamNoti({isEditSuccess:true,isLoading:false,isRenderNoti:true}))
+    },[isEditSuccess])
     return (
         <div className="adminFighter">
             <div className={`adminContent ${props.isRenderAdFighter ? "show" : ""}`}>
@@ -140,28 +152,28 @@ export default function AdminFighter_Hook(props) {
                                 Images
                             </div>
                         </div>
-                    </div>
-                    <div className="showBody">
-                        {listCharacter.map((item,index)=>
-                            <div className="characterDetail" key={index}>
-                                <p>{index + 1}</p>
-                                <p>{item.name}</p>
-                                <p>{item.team}</p>
-                                <img src={item.images}/>
-                                <button 
-                                    className="btn btn-primary"
-                                    onClick={()=>{handleShowForm({type:"EDIT",item})}}
-                                >
-                                    EDIT
-                                </button>
-                                <button 
-                                    className="btn btn-danger"
-                                    onClick={()=>{handleButtonDelete(item.id)}}
-                                >
-                                    DELETE
-                                </button>
-                            </div>
-                        )}
+                        <div className="showBody">
+                            {listCharacter.map((item,index)=>
+                                <div className="characterDetail" key={index}>
+                                    <p>{index + 1}</p>
+                                    <p>{item.name}</p>
+                                    <p>{item.team}</p>
+                                    <img src={item.images}/>
+                                    <button 
+                                        className="btn btn-primary"
+                                        onClick={()=>{handleShowForm({type:"EDIT",item})}}
+                                    >
+                                        EDIT
+                                    </button>
+                                    <button 
+                                        className="btn btn-danger"
+                                        onClick={()=>{handleButtonDelete(item.id)}}
+                                    >
+                                        DELETE
+                                    </button>
+                                </div>
+                            )}
+                        </div>
                     </div>
                 </div>
                 <div className="adminFooter">

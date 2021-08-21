@@ -55,9 +55,9 @@ export const handleParamForm=(param)=>{
 }
 export const addCharacter=(data)=>{
   return (dispatch) =>{
-    dispatch({
-      type:SEVER_REQUEST_LOADING
-    })
+    // dispatch({
+    //   type:SEVER_REQUEST_LOADING
+    // })
     addCharacterService(data).then((result)=>{
        dispatch({
         type:ADD_CHARACTER_SUCCESS,
@@ -68,9 +68,9 @@ export const addCharacter=(data)=>{
 }
 export const deleteCharacter=(id)=>{
   return (dispatch) =>{
-      dispatch({
-        type:SEVER_REQUEST_LOADING
-      })
+      // dispatch({
+      //   type:SEVER_REQUEST_LOADING
+      // })
     deleteCharacterService(id).then((result)=>{
       dispatch({
         type:DELETE_CHARACTER_SUCCESS,
@@ -81,9 +81,9 @@ export const deleteCharacter=(id)=>{
 }
 export const editCharacter=(id,data)=>{
   return (dispatch)=>{
-    dispatch({
-      type:SEVER_REQUEST_LOADING
-    })
+    // dispatch({
+    //   type:SEVER_REQUEST_LOADING
+    // })
     editCharacterService(id,data).then((result)=>{
       dispatch({
         type:EDIT_CHARACTER_SUCCESS,

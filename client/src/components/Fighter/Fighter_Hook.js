@@ -10,8 +10,8 @@ export default function Fighter_Hook() {
     const dispatch = useDispatch();
     //Data from store
     const { characterItems,isRenderModal,isRenderAdFighter } = useSelector(state => state.characterReducer);
-    const [isDelayAdFighter,setIsDelayAdFighter] = useState(false);
-    const [isDelayModal,setIsDelayModal] = useState(false);
+    const [ isDelayAdFighter,setIsDelayAdFighter ] = useState(false);
+    const [ isDelayModal,setIsDelayModal ] = useState(false);
     //Call api getListCharacter to dispatch to store
     useEffect(()=>{dispatch(getCharacter())},[])
     //Function set delay time to run animation when open or close component

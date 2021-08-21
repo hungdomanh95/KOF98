@@ -39,12 +39,13 @@ export default function FormAdmin_Hook(props) {
     }
     // Function check input empty
     const checkEmpty = (idCheck,messenger,idMessenger) => {
-        if(document.getElementById(idCheck).value == ""){
-            document.getElementById(idMessenger).innerHTML=messenger
+        const getELEId = (id) => document.getElementById(id)
+        if(getELEId(idCheck).value == ""){
+            getELEId(idMessenger).innerHTML=messenger
             return false
         }
         else{
-            document.getElementById(idMessenger).innerHTML=""
+            getELEId(idMessenger).innerHTML=""
             return true
         }
     }

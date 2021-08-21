@@ -1,32 +1,42 @@
 import React, { useEffect } from 'react';
 import { useSelector,useDispatch } from 'react-redux';
-import { handleParamNoti,addCharacter,getCharacter,deleteCharacter,editCharacter } from '../../../redux/action/characterAction';
+import { handleParamNoti,handleParamForm,addCharacter,getCharacter,deleteCharacter,editCharacter } from '../../../redux/action/characterAction';
 export default function Notification_Hook() {
     const dispatch = useDispatch();
     // Data from store
     const { paramNoti,
+            paramForm,
             isAddSuccess,
             isDeleteSuccess,
-            isEditSuccess} = useSelector((state)=>state.characterReducer);
+            isEditSuccess } = useSelector((state)=>state.characterReducer);
     const {data,type} = paramNoti;
     //Check type nhận được để xác định chức năng ADD ,  EDIT hay DELETE
     const handleButtonYes = ()=> {
+        let param = {
+            isRenderNoti : false,
+            isRenderLoading : true,
+        }
         {type === "ADD_CHARACTER" && dispatch(addCharacter(data))}
         {type === "DELETE_CHARACTER" && dispatch(deleteCharacter(data))}
         {type === "EDIT_CHARACTER" && dispatch(editCharacter(data.id,data))}
+        dispatch(handleParamNoti(param))
+        dispatch(handleParamForm({isRenderForm:false,data:paramForm}))
     }
     // Close Notification_Hook
     const handleButtonNo = () => {
         let param = {
-            isRenderNoti : false
+            isRenderNoti : false,
+            isAddSuccess : false,
+            isDeleteSuccess :false,
+            isEditSuccess : false
         }
         dispatch(handleParamNoti(param))
     }
     // Check xem giá trị trả về từ server đã thực thi thành công , sau đó update lại data mới
-    useEffect(()=>{
-        if(isAddSuccess || isDeleteSuccess || isEditSuccess) 
-            dispatch(getCharacter())
-    },[isAddSuccess,isDeleteSuccess,isEditSuccess])
+    // useEffect(()=>{
+    //     if(isAddSuccess || isDeleteSuccess || isEditSuccess) 
+    //         dispatch(getCharacter())
+    // },[isAddSuccess,isDeleteSuccess,isEditSuccess])
     return (
         <div className="notification">
             <div className="notiContent">

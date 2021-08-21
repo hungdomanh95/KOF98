@@ -22,8 +22,7 @@
             position: relative;
             height: 84%;
             .showCharacter{
-                padding-bottom: 5px;
-                border-bottom: 2px solid black;
+                height:86%;
                 .showTitle{
                     display: grid;
                     grid-template-columns: repeat(6,1fr);
@@ -64,10 +63,12 @@
                         }
                     }
                 }
-            }
             .showBody{
-                height: 79%;
+                height: 94%;
                 overflow-y: scroll;
+                border-bottom: 2px solid black;
+                border-top:2px solid black;
+                @include edtiScrollBar();
                 .characterDetail{
                     text-align: center;
                     display: grid;
@@ -80,6 +81,7 @@
                         padding:0;
                         width:70px;
                         margin:0 auto;
+                        }
                     }
                 }
             }
@@ -100,7 +102,8 @@
             width:70%;
             .adminBody{
                 height:87%;
-                .bodyTitle{
+                .showCharacter{
+                    height: 90%;
                     .showTitle{
                         .titleDetail{
                             .sortTeamContent{
@@ -108,9 +111,9 @@
                             }
                         }
                     }
-                }
-                .showCharacter{
-                    height: 87%;
+                    .showBody{
+                        height: 97%;
+                    }
                 }
             }
             .adminFooter{
@@ -126,25 +129,25 @@
             width:100%;
             .adminBody{
                 height:84%;
-                .bodyTitle{
-                    .showTitle{
-                        .titleDetail{
-                            .sortTeamContent{
-                                width: 250%;
+                .showCharacter{
+                    height:84%;
+                        .showTitle{
+                            .titleDetail{
+                                .sortTeamContent{
+                                    width: 250%;
+                                }
+                            }
+                        }
+                        .showBody{
+                            .characterDetail{
+                                button{
+                                    width:40px;
+                                    font-size: 10px;
+                                }   
                             }
                         }
                     }
-                }
-                .showCharacter{
-                    height:78%;
-                    .characterDetail{
-                        button{
-                            width:50px;
-                            font-size: 13px;
-                        }
-                    }
-                }
-            }
+                }   
             .adminFooter{
                 button{
                     width:70px;
