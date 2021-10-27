@@ -1,11 +1,11 @@
 .banner {
     position: relative;
-    .bannerBackground {
+    .banner__Background {
         img{
             width: 100%;
         }
     }
-    .bannerLogo {
+    .banner__Logo {
         top:0;
         width:100%;
         position:absolute;
@@ -15,13 +15,13 @@
             width:18%;
         }
     }
-    .bannerCharacter {
+    .banner__Character {
         width: 30%;
         position: absolute;
         top: 20%;
         left: 10%;
     }
-    .bannerLink {
+    .banner__Link {
         width: 70%;
         left: 50%;
         bottom: 10%;
@@ -29,7 +29,7 @@
         position: absolute;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        .bannerItem{
+        .banner__Item{
             position: relative;
             img {
                 transition:all 0.5s;
@@ -60,7 +60,7 @@
 }
 @media screen and (max-width:900px){
     .banner{
-        .bannerLogo{
+        .banner__Logo{
          img{
              width:20%;
          }
@@ -70,13 +70,13 @@
 }
 @media screen and (max-width:500px){
    .banner{
-       .bannerLogo{
+       .banner__Logo{
         img{
             width:17%;
         }
     }
-    .bannerLink{
-        .bannerItem{
+    .banner__Link{
+        .banner__Item{
             span{
                 font-size: 15px;
             }

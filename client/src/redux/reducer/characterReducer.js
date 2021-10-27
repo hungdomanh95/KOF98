@@ -22,7 +22,7 @@ const initState = {
 const characterReducer = (state = initState, action) => {
   const searchIndex = (listSearch,id) => {
     let indexSearch = -1;
-    listSearch.map((item,index)=>{
+    listSearch.find((item,index)=>{
       if(item.id===id) indexSearch = index
     })
     return indexSearch

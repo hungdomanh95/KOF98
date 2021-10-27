@@ -37,66 +37,6 @@
     left :0;
     right:0;
 }
-@mixin sortButton {
-    display: contents;
-    outline: none;
-    border:none;
-    position: absolute;
-    z-index: 10;
-    left: 50%;
-    background:white;
-    transform:translateX(-50%);
-    padding:0;
-    &:hover{
-        cursor: pointer;
-    }
-}
-@mixin sortContent{
-    box-shadow: 1px 1px 10px black;
-    height: 0px;
-    width:150%;
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    position: absolute;
-    left: 50%;
-    top:38px;
-    transform: translateX(-50%);
-    visibility: hidden;
-    &.show{
-        visibility: visible;
-        opacity: 1;
-        transition: all 0.5s;
-        background:yellow;
-        border-radius:5px;
-    }
-}
-@mixin sortItemDetail {
-    position: relative;
-    margin:0;
-    &.active{
-        background-color:black;
-        color:yellow;
-    }
-    &::after{
-    transition: 0.5s;
-    bottom: 0;
-    position: absolute;
-    content: "";
-    height: 3px;
-    width: 0%;
-    right:0;
-    }
-    &:hover{
-        cursor: pointer;
-        &::after{
-            background-color: black;
-            width: 100%;
-            left:0;
-        }
-    }
-}
 @mixin edtiScrollBar{
     &::-webkit-scrollbar {
         width: 7px;

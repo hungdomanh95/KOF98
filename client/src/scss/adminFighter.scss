@@ -35,33 +35,6 @@
                         font-size:17px;
                         text-align: center;
                     }
-                    .titleDetail{
-                        position:relative;
-                        .sortNameButton{
-                           @include sortButton();
-                        }
-                        .sortNameContent{
-                          @include sortContent();
-                          &.show{
-                              height: 100px;
-                          }
-                          .nameDetail{
-                              @include sortItemDetail();
-                            }   
-                        }
-                        .sortTeamButton{
-                            @include sortButton();
-                        }
-                        .sortTeamContent{
-                           @include sortContent();
-                           &.show{
-                               height: 200px;
-                           }
-                            .teamDetail{
-                                @include sortItemDetail();
-                            }   
-                        }
-                    }
                 }
             .showBody{
                 height: 94%;
@@ -104,15 +77,8 @@
                 height:87%;
                 .showCharacter{
                     height: 90%;
-                    .showTitle{
-                        .titleDetail{
-                            .sortTeamContent{
-                                width: 200%;
-                            }
-                        }
-                    }
                     .showBody{
-                        height: 97%;
+                        height: 91%;
                     }
                 }
             }
@@ -131,13 +97,6 @@
                 height:84%;
                 .showCharacter{
                     height:84%;
-                        .showTitle{
-                            .titleDetail{
-                                .sortTeamContent{
-                                    width: 250%;
-                                }
-                            }
-                        }
                         .showBody{
                             .characterDetail{
                                 button{

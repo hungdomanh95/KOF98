@@ -14,10 +14,11 @@
             animation: openComponent 0.3s linear;
         }
         .modalHeader{
+            position:relative;
             i{
                 color:white;
                 font-size: 30px;
-                position: fixed;
+                position: absolute;
                 right:0;
             }
         }
@@ -61,31 +62,17 @@
                     img{
                         width:50px;
                         border-radius: 50%;
+                        margin: 0 10px;
                     }
-                    .characterEquipment{
-                        margin-top: 50px;
-                       .equipmentContent{
-                           margin:20px;
-                           display: grid;
-                           grid-template-columns: repeat(4,1fr);
-                       }
-                    }
-                    .characterSoulForce{
-                        .soulForceContent{
-                            margin:20px;
-                            display: grid;
-                            grid-template-columns: repeat(4,1fr);
+                    .inforBasic{
+                        .inforBasic__item{
+                            width: 80%;
+                            margin:20px 0px;
+                            display: flex;
                         }
+                    &:last-child img{
+                        width:100px;
                     }
-                    .characterHiddenFate{
-                        .hiddenFateContent{
-                            margin:20px;
-                            display: grid;
-                            grid-template-columns: repeat(3,1fr);
-                            img{
-                                width: 100px;
-                            }
-                        }
                     }
                }
            }
@@ -117,18 +104,6 @@
                             width:50%;
                         }
                     }
-                    .characterInforBasic{
-                        img{
-                            width:80px;
-                        }
-                        .characterHiddenFate{
-                            .hiddenFateContent{
-                                img{
-                                    width: 150px;
-                                }
-                            }
-                        }
-                    }
                 }
                 
             }
@@ -144,18 +119,6 @@
                     .characterImages{
                         img{
                             width:100%;
-                        }
-                    }
-                    .characterInforBasic{
-                        img{
-                            width:50px;
-                        }
-                        .characterHiddenFate{
-                            .hiddenFateContent{
-                                img{
-                                    width: 100px;
-                                }
-                            }
                         }
                     }
                 }

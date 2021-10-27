@@ -1,14 +1,17 @@
 import React ,{useEffect, useState,useMemo}from 'react'
+import { listTeam,listSortName } from '../Listdata';
 
 export default function ControlSearch(props) {
     // - Data from component AdminFighter_Hook
-    const {newListCharacter,setListCharater,teamSort,nameSort} = props;
+    const {newListCharacter,setListCharater} = props;
     // - Variable to take the value from input searchCharacter
     const [searchText,setSearchText] = useState("");
+    const [nameSelect,setNameSelect] = useState("A-Z");
+    const [teamSelect,setTeamSelect] = useState("All")
     //set data for searchText when the value in input change
-    const handleOnChange= (e) => {
-        setSearchText(e.target.value)
-    }
+    const handleOnChange= (e) => {setSearchText(e.target.value)}
+    const handleOnChangeName = (e) => {setNameSelect(e.target.value)}
+    const handleOnChangeTeam = (e) => {setTeamSelect(e.target.value)}
     // - Function listSearchCharacter , 
     //   when searchText change this function run and return the new list character
     // - useMemo nhận về 2 giá trị bên trong là hàm thực thi , và giá trị thay đổi để chạy hàm thực thi 
@@ -23,49 +26,62 @@ export default function ControlSearch(props) {
             return nameLower.indexOf(searchLower) !== -1
         })
         else return newListCharacter
-    },[searchText,newListCharacter])    
-    // const listSearchAndSortName = useMemo(()=>{
-    //     console.log(nameSort)
-    //     let indexSort  = 0;
-    //     if(nameSort == "A-Z") indexSort = -1;
-    //     if(nameSort == "Z-A") indexSort = 1;
-    //     if(nameSort == "Default") indexSort = 0;
-    //     return listSearchCharacter.sort((a,b)=>{
-    //         console.log(indexSort)
-    //         if(a.name.toLowerCase()<b.name.toLowerCase()) return indexSort*(1)
-    //         else if(a.name.toLowerCase()>b.name.toLowerCase()) return indexSort*(1)
-    //         else return indexSort*1
-    //     })
-    // },[nameSort,listSearchCharacter,newListCharacter])
-    const listSearchSortNameAndTeam = useMemo(()=>{
-        if(teamSort !== "All")
-            return listSearchCharacter.filter((item)=>{
-                return item.team === teamSort
+    },[searchText,newListCharacter])
+    const ListSortName = useMemo(()=>{
+        let newListSearch = [...listSearchCharacter]
+        return newListSearch.sort((a,b)=>{
+            let index = (nameSelect === "A-Z" ? 1 : -1);
+            const nameA = a.name.toLowerCase();
+            const nameB = b.name.toLowerCase();
+            return index*nameA.localeCompare(nameB)
+        })
+    },[nameSelect,listSearchCharacter])    
+    const listSortTeam = useMemo(()=>{
+        if(teamSelect !== "All")
+            return ListSortName.filter((item)=>{
+                return item.team === teamSelect
             })
-        else return listSearchCharacter
-    },[teamSort,listSearchCharacter,newListCharacter])
+        else return ListSortName
+    },[teamSelect,ListSortName])
     //Update newlist after search , sort name and sort team
     useEffect(()=>{
-        setListCharater(listSearchSortNameAndTeam)
-    },[searchText,nameSort,teamSort,newListCharacter])
+        setListCharater(listSortTeam)
+    },[searchText,nameSelect,teamSelect,newListCharacter])
     //Clear data in input searchCharacter
     const handleButtonClear = () => {
         setSearchText("")
     }
     return (
-        <div className="searchCharacter">
-            <input 
-                type="text" 
-                value={searchText}
-                onChange={handleOnChange}
-                placeholder="Search . . ."
-            />
-            <button 
-                className="btn btn-success"
-                onClick={handleButtonClear}
-            >
-                CLEAR
-            </button>
+        <div className="searchSortCharacter">
+            <div className="searchCharacter">
+                <input 
+                    type="text" 
+                    value={searchText}
+                    onChange={handleOnChange}
+                    placeholder="Search . . ."
+                />
+                <button 
+                    className="btn btn-success"
+                    onClick={handleButtonClear}
+                    >
+                    CLEAR
+                </button>
+            </div>
+            <div className="sortCharacter">
+                <span>Sort Character By</span>
+                <select name="nameSelect" id="nameSelect" onChange={handleOnChangeName}>
+                    {listSortName.map((item,index)=>
+                        <option value={item.sort} key={index}>{item.sort}</option>
+                    )}
+                </select>
+                <span>And</span>
+                <select name="teamSelect" id="teamSelect" onChange={handleOnChangeTeam}>
+                        <option value="All">All</option>
+                    {listTeam.map((item,index)=>
+                        <option value={item.team} key={index}>{item.team}</option>
+                    )}
+                </select>
+            </div>
         </div>
     )
 }

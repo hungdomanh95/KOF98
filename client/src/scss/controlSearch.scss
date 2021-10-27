@@ -1,35 +1,63 @@
-.searchCharacter{
+.searchSortCharacter{
     display: flex;
     align-items: center;
-    margin-left:50px;
-    input{
-        border:1px solid black;
-        border-radius: 5px;
-        height: 30px;
-        padding: 5px;
-        width:200px;
-        &:focus{
-            outline:none;
+    justify-content: space-between;
+    margin: 0px 50px;
+    .searchCharacter{
+        width:45%;
+        display: flex;
+        align-items: center;
+            input{
+                border:1px solid black;
+                border-radius: 5px;
+                height: 30px;
+                padding: 5px;
+                width:200px;
+            &:focus{
+                outline:none;
+            }
+        }
+        button{
+            margin-left:10px;
+            border-radius:5px;
+            height: 30px;
+            width: 80px;
+            padding:0;
         }
     }
-    button{
-        margin-left:10px;
-        border-radius:5px;
-        height: 30px;
-        width: 80px;
-        padding:0;
+    .sortCharacter{
+        width: 55%;
+        display: flex;
+        justify-content: space-between;
+        span{
+            font-weight: bold;
+        }
+        select{
+            background-color: yellow;
+            border-radius: 5px;
+            text-align: center;
+            outline: none;
+        }
     }
 }
 @media screen and (max-width:900px){
-    .searchCharacter{
-        margin-left:30px;
-        input{
-            width:200px;
+    .searchSortCharacter{
+        display: block;
+        .searchCharacter{
+            input{
+                width:200px;
+            }
+        }
+        .sortCharacter{
+            margin:10px 0;
+            width:100%;
         }
     }
 }
 @media screen and (max-width:500px){
-    .searchCharacter{
-        margin-left:20px;
+    .searchSortCharacter{
+        .sortCharacter{
+            font-size: 10px;
+        }
     }
 }

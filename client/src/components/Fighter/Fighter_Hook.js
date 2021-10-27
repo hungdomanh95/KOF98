@@ -19,13 +19,9 @@ export default function Fighter_Hook() {
         {isCheck ? setDelay(true) : setTimeout(()=>{setDelay(false)},300)}
     }
     //Set delay time to run animation when open or close component AdminFighter_Hook
-    useEffect(()=>{
-        setTimeDelay(isRenderAdFighter,setIsDelayAdFighter)
-    },[isRenderAdFighter])
+    useEffect(()=>{setTimeDelay(isRenderAdFighter,setIsDelayAdFighter)},[isRenderAdFighter])
     //Set delay time to run animation when open or close component ModalFighter_Hook
-    useEffect(()=>{
-        setTimeDelay(isRenderModal,setIsDelayModal)
-    },[isRenderModal])
+    useEffect(()=>{setTimeDelay(isRenderModal,setIsDelayModal)},[isRenderModal])
     //Add images from listImages to data from store
     useEffect(()=>{
         if(characterItems){
@@ -40,8 +36,7 @@ export default function Fighter_Hook() {
     },[characterItems])
     //Hidden or visible the scrollbar when the ModalFighter or AdFighter open or close
     useEffect(()=>{
-        if(isRenderModal || isRenderAdFighter) 
-            document.body.style.overflow="hidden";
+        if(isRenderModal || isRenderAdFighter) document.body.style.overflow="hidden";
         else document.body.style.overflow="scroll";
     },[isRenderAdFighter,isRenderModal])
     return (
@@ -49,9 +44,8 @@ export default function Fighter_Hook() {
             <Banner_Hook />
             <ShowFighter_Hook />
             {isDelayModal && <ModalFighter_Hook isRenderModal={isRenderModal}/>}
-            {isDelayAdFighter && <AdminFighter_Hook 
-                isRenderAdFighter={isRenderAdFighter} 
-                setTimeDelay={setTimeDelay}/>}
+            {isDelayAdFighter && 
+                <AdminFighter_Hook isRenderAdFighter={isRenderAdFighter} setTimeDelay={setTimeDelay}/>}
         </>
         )
     }

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector,useDispatch } from 'react-redux';
-import { handleParamNoti,handleParamForm,addCharacter,getCharacter,deleteCharacter,editCharacter } from '../../../redux/action/characterAction';
+import { handleParamNoti,handleParamForm,addCharacter,deleteCharacter,editCharacter } from '../../../redux/action/characterAction';
 export default function Notification_Hook() {
     const dispatch = useDispatch();
     // Data from store

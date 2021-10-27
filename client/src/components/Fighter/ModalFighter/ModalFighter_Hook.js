@@ -7,6 +7,7 @@ export default function ModalFighterHook(props) {
     const {paramModal} = useSelector(state => state.characterReducer);
     const { name,images__card,intro,fate,equipment,infor,soul__energy,hidden__charm,passive1,passive2,thunderElement,
             waterElement,skill,ultimate,strongest,weakness} = paramModal;
+    const paramBasic = [equipment,soul__energy,hidden__charm]
     //Function close modal
     const handleCloseModal = () => {
         let param = {
@@ -15,20 +16,6 @@ export default function ModalFighterHook(props) {
         }
         dispatch(handleInforModal(param))
     };
-    const renderInforBasic = (title,infor,nameClass) => {
-        if(infor.length > 0) {
-            return (
-                <>
-                    <h5>{title}</h5>
-                    <div className={nameClass}>
-                        {infor.map((item,index)=>
-                            <img key={index} src={item} alt="" />
-                        )}
-                    </div>
-                </>
-            )
-        }
-    }
     const renderInforDetail = (title,infor,nameClass) => {
         if(infor.content) 
             return (
@@ -51,7 +38,6 @@ export default function ModalFighterHook(props) {
         //Close modal when press ESC button on the keypoard
     useEffect(()=>{
         document.addEventListener("keyup",(e)=>{    
-            console.log(e)
             if(e.code=="Escape") handleCloseModal()
         })
     },[])
@@ -60,8 +46,7 @@ export default function ModalFighterHook(props) {
             <div className={`modalContent ${props.isRenderModal ? "show" : ""}`}>
                 <div className="modalHeader">
                     <i  className="fa fa-times-circle"
-                        onClick={handleCloseModal}
-                    >
+                        onClick={handleCloseModal}>
                     </i>
                 </div>
                 <div className="modalBody">
@@ -87,15 +72,16 @@ export default function ModalFighterHook(props) {
                                     <p key={index}>*{item}</p>
                                 )}
                             </div>
-                            <div className="characterEquipment">
-                                {renderInforBasic("Trang Bị",equipment,"equipmentContent")}
-                            </div>
-                            <div className="characterSoulForce">
-                                {renderInforBasic("Hồn Lực",soul__energy,"soulForceContent")}
-                            </div>
-                            <div className="characterHiddenFate">
-                                {renderInforBasic("Duyên Ngầm",hidden__charm,"hiddenFateContent")}
-                            </div>
+                            {paramBasic.map((item,index)=>
+                                <div className="inforBasic" key={index}>
+                                    <h5>{item.title}</h5>
+                                    <div className="inforBasic__item">
+                                        {item.content.map((item)=>
+                                            <img src={item} alt="" />
+                                        )}
+                                    </div>
+                                </div>
+                            )}
                         </div>
                     </div>
                     <div className="characterDetail">
